@@ -13,6 +13,13 @@ const Nav = () => {
           <li>
             <Link to={{ pathname: "/about"}}>About  </Link>
           </li>
+          <li>
+            <a href="https://github.com/jw287962">Github</a> 
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jason-wong-a796a2175/">Linkedin</a> 
+          </li>
+          
         </ul>
 
     </nav>
