@@ -22,16 +22,16 @@
 .navList>li>a{
   color: black;
   text-decoration: none;
-  transition: color 1s ease-in-out;
+  padding: 6px;
+  transition: color 1s ease-out, background-color 0.5s ease-out;
   background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .navList>li>a:hover{
   color: white;
-  transition: color 2s ease-in-out;
-  background-color: rgb(231, 231, 231);
-  padding: 6px;
-  border: 1px solid white;
-  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(216, 216, 216);
   text-decoration: none;
 }
