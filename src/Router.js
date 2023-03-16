@@ -11,6 +11,7 @@ const Router = () => {
     <Nav></Nav>
       <Routes>
         <Route path="/" element={<App />}></Route>
+        <Route path="/Home" element={<App />}></Route>
         <Route path="/about" element={<About/>}></Route>
        
       </Routes>
