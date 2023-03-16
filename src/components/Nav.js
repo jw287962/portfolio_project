@@ -1,5 +1,8 @@
 import '../css/nav.css'
 import { Link } from 'react-router-dom';
+import github from '../img/Github.png';
+import linkedin from '../img/Linkedin.png';
+
 
 const Nav = () => {
   return (
@@ -13,11 +16,12 @@ const Nav = () => {
           <li>
             <Link to={{ pathname: "/about"}}>About  </Link>
           </li>
-          <li>
-            <a href="https://github.com/jw287962">Github</a> 
+          <li className='image'>
+          <a className="imgLink" href="https://github.com/jw287962"><img height="40" width="40" src={github} ></img></a> 
           </li>
-          <li>
-            <a href="https://www.linkedin.com/in/jason-wong-a796a2175/">Linkedin</a> 
+          <li  className='image'>
+          <a className="imgLink" href="https://www.linkedin.com/in/jason-wong-a796a2175/"><img height="40" width="40" src={linkedin} ></img></a> 
+       
           </li>
           
         </ul>
