@@ -8,7 +8,24 @@ main{
   align-items: center;
 }
 
+.links{
 
+}
+.links>.link>a{
+  color: black;
+  text-decoration: none;
+}
+.links>.link:hover{
+ background-color: rgb(240, 240, 240);
+}
+/* button WEbsite links*/
+.links>.link{
+background-color: white;
+padding: 7px;
+margin: 10px;
+border: 1px solid black;
+border-radius: 10px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
