@@ -11,6 +11,7 @@
 
 .navList{
   display: flex;
+  align-items: center;
 
 }
 
@@ -34,4 +35,21 @@
   font-weight: bold;
   background-color: rgb(216, 216, 216);
   text-decoration: none;
+}
+
+/* .navList>.github{
+  background-image: url('../img/Github.png');
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px; 
+  height: 20px;
+} */
+
+.github{
+  display: flex;
+  align-items: center;
+}
+.navList>li>.imgLink:hover{
+  color: unset;
+  background-color: unset;
 }
