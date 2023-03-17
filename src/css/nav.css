@@ -1,4 +1,5 @@
 
+
 .mainNav{
   border-bottom: 1px solid grey;
   display: flex;
@@ -18,24 +19,33 @@
 .navList>li{
   padding: 10px;
   list-style: none;
-
 }
 .navList>li>a{
+  display: flex;
+  flex-direction: column;
   color: black;
   text-decoration: none;
   padding: 6px;
-  transition: color 0.5s ease-out,font-size 0.25s ease-out;
+  transition: color 0.5s ease-out,font-size 0.25s ease-out, width 1s ease-out;
   background-color: white;
-  border: 1px solid white;
-  border-radius: 10px;
+}
+.navList>li>a::after{
+  display: inline-block;
+  transition: width 0.5s ease-out;
+  content: '';
+  width: 0px;
+  border-bottom: 2px solid rgb(156, 210, 228);
+}
+.navList>li>a:hover::after{
+  width: 80%;
 }
 
 .navList>li>a:hover{
   color: rgb(156, 210, 228);
+  width: 100%;
   font-size: 18px;
-  font-weight: 800;
   text-decoration: none;
-  
+  /* border-bottom: 2px solid rgb(156, 210, 228); */
 }
 
 /* .navList>.github{
