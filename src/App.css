@@ -27,12 +27,14 @@ p{
 
 .home{
   animation: flyin 1.8s ease-out 0s 1;
+box-sizing: border-box;
+
 }
 
 /* each project card */
 .home>h3{
   border: 1px solid black;
-margin: 40px;
+margin: 25px;
 }
 .links{
   padding: 10px;
