@@ -10,18 +10,57 @@
 
 .home{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.home>h3>div{
+  display: flex;
+  flex-direction: column;
 }
 
-.links>.link>a{
+main>h1,h4{
+  position: relative;
+  animation: textflyin 1s ease-in-out 0s 1;
+}
+p{
+  animation: textflyin 2.5s cubic-bezier(.78,-0.43,.18,1) 0s 1;
+}
+
+.home{
+  animation: flyin 1.8s ease-out 0s 1;
+}
+
+/* each project card */
+.home>h3{
+  border: 1px solid black;
+margin: 40px;
+}
+.links{
+  padding: 10px;
+}
+.weblink{
+  position: relative;
+  top:2px;
+}
+.links>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links>img{
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  min-height: 80%;
+  
+}
+.links>div>.link>a{
   color: black;
   text-decoration: none;
 }
-.links>.link:hover{
+.links>div>.link:hover{
  background-color: rgb(218, 218, 218);
 }
 /* button WEbsite links*/
-.links>.link{
+.links>div>.link{
 background-color: white;
 padding: 7px;
 margin: 10px;
@@ -34,13 +73,22 @@ border-radius: 10px;
   }
 }
 
-
-
-@keyframes App-logo-spin {
+@keyframes textflyin {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-110vh);
   }
+ 
   to {
-    transform: rotate(360deg);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes flyin {
+  from {
+    transform: translateY(-900vh);
+  }
+ 
+  to {
+    transform: translateY(0px);
   }
 }
