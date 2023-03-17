@@ -10,6 +10,7 @@ import arrow from '../img/arrow.png'
 const Main = () => {
   return (
     <main  >
+      <base target="_blank"></base>
         <h1>Jason's Projects</h1>
     <div className='home'>
       <h3>
@@ -18,7 +19,7 @@ const Main = () => {
           <h3>TOOT (Twitter Clone):</h3>
 
             <div>
-      <a href='https://twitter-clone-33714.web.app/'><img className="weblink" height="30" width="30" src={arrow}></img></a>
+      <a href='https://twitter-clone-33714.web.app/' ><img className="weblink" height="30" width="30" src={arrow}></img></a>
                     <a href='https://github.com/jw287962/twitter-clone'><img height="38" width="38" src={github} ></img></a>
             </div>
           </div>
