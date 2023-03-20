@@ -93,11 +93,11 @@ border-radius: 10px;
 
 @keyframes textflyin {
   from {
-    transform: translateY(-110vh);
+    opacity: 0%;
   }
  
   to {
-    transform: translateY(0px);
+    opacity: 100%
   }
 }
 
