@@ -33,13 +33,13 @@ box-sizing: border-box;
 
 /* each project card */
 .home>h3{
-  border: 1px solid black;
+  border: 2px solid black;
 margin: 25px;
 }
 .links{
-  padding: 10px;
   height: 100%;
   justify-content: space-between;
+
 }
 .weblink{
   position: relative;
@@ -59,8 +59,9 @@ margin: 25px;
   align-items: center;
 }
 .links>img{
-  padding-bottom: 10px;
+  padding: 15px;
 }
+
 .links>div>.link>a{
   color: black;
   text-decoration: none;
@@ -68,6 +69,14 @@ margin: 25px;
 .links>div>.link:hover{
  background-color: rgb(218, 218, 218);
 }
+a:hover{
+  scale: 1.2;  
+}
+.links>div>div>a{
+  padding: 0px 5px;
+  
+}
+
 /* button WEbsite links*/
 .links>div>.link{
 background-color: white;
