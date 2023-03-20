@@ -38,21 +38,28 @@ margin: 25px;
 }
 .links{
   padding: 10px;
+  height: 100%;
+  justify-content: space-between;
 }
 .weblink{
   position: relative;
   top:2px;
 }
 .links>div{
+  margin-bottom: 15px;
+}
+.links>div>h3{
+  border-top: 1px solid grey;
+  margin: 0px;
+  padding-top: 15px;
+}
+.links>div>div{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .links>img{
-  border-bottom: 1px solid grey;
   padding-bottom: 10px;
-  min-height: 80%;
-  
 }
 .links>div>.link>a{
   color: black;
