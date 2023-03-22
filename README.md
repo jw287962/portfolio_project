@@ -1,9 +1,14 @@
+
+### NPM RUN BUILD
+ -- updates hosting page
+
+### HOSTED SITE: 
+https://jw287962.github.io/portfolio_project/  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### NPM RUN BUILD
- -- updates hosting page
 
 ## Available Scripts
 
