@@ -7,13 +7,34 @@ import calculator from '../img/calculator.png'
 import github from '../img/Github.png';
 import Nav from './Nav';
 import arrow from '../img/arrow.png'
+import { useEffect } from 'react';
 const Main = () => {
+  useEffect(()=> {
+
+    let options = {
+      rootMargin: "100px",
+    }
+    const observer = new IntersectionObserver((entries,options) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting){
+          entry.target.classList.add('show')
+
+        }else{
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+  });
   return (
     <main  >
       <base target="_blank"></base>
         <h1>Jason's Projects</h1>
     <div className='home'>
-      <h3>
+      <h3 className='hidden'>
             <div className='links'>
             <img src={twitter} className="projects"></img>
             <div>
@@ -26,7 +47,7 @@ const Main = () => {
             </div>
       </h3>
    
-      <h3>
+      <h3 className='hidden'>
             <div className='links'>
             <img src={weather} className="projects"></img>
             <div>
@@ -38,7 +59,7 @@ const Main = () => {
               </div>
             </div>
       </h3>
-      <h3>
+      <h3 className='hidden'>
           <div className='links'>
           <img src={todo} className="projects"></img>
             <div>
@@ -50,7 +71,7 @@ const Main = () => {
                         </div>
             </div>
       </h3>
-      <h3>
+      <h3 className='hidden'>
           <div className='links'>
           <img src={battleship} className="projects"></img>
           <div>
@@ -63,7 +84,7 @@ const Main = () => {
             
           </div>
           </h3>
-      <h3>
+          <h3 className='hidden'>
         
           <div className='links'>
           <img src={calculator} className="projects"></img>
@@ -77,7 +98,7 @@ const Main = () => {
             </div>
         
           </h3>
-      <h3>
+          <h3 className='hidden'>
      
         
         <div className='links'>

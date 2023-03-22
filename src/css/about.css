@@ -1,5 +1,24 @@
-.about>p{
+.about>div>p{
   padding: 0px 40px;
   box-sizing: border-box;
   font-size: 19px;
 }
+
+.about>div{
+  text-align: center;
+}
+
+.about>.hidden{
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+.about>.show{
+  transition: all 1s;
+  transform: translateX(00%);
+  filter: blur(0px);
+  opacity: 1;
+
+}
+
+
