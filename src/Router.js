@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Nav from "./components/Nav";
 import About from "./components/About";
+import Footer from './components/Footer'
 
 const Router = () => {
   
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path="/about" element={<About/>}></Route>
        
       </Routes>
+    <Footer></Footer>
     </BrowserRouter>
   );
 
