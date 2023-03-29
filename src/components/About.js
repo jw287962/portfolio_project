@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '../css/about.css'
 import Nav from './Nav';
 import { useEffect } from 'react';
+import jason from '../img/jason.png'
 const About = () => {
 
   useEffect(()=> {
@@ -27,11 +28,13 @@ const About = () => {
 
   return (
     <main className='about'>
+      <img src={jason} height='250px'></img>
         <div className='hidden'>
           <h1>About Jason </h1>
           <p>Although I graduated as a Management Information Systems graduate at University of Georgia in 2020, I ended up not pursuing a job in my field.
-            I am currently 25 years old, and have discovered a new passion, programming. You can view some of my work here
-            while learning through the Odin Project. I am always eager for a challenge, finding enjoyment in problem solving and learning
+            I am currently 25 years old, and have discovered a new passion, programming, through The Odin Project. 
+            'You can view my projects <a href="/portfolio_project/Home">here</a>.
+            I am always eager for a challenge, finding enjoyment in problem solving and learning
             new things. Outside of programming, I enjoy hobbies such as playing sports and games.
              </p>
         </div>

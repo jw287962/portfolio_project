@@ -11,8 +11,9 @@ h1,h2,h3,h4,li>a{
   font-family: 'Roboto-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  
-
+}
+a{
+  color: black
 }
 body {
   margin: 0;
