@@ -3,7 +3,7 @@ import { skillImages } from "./skillImage";
 const Skills = () => {
   const imgSize = 50;
   return (
-    <div>
+    <div className="skillContainer">
       <h1>Skills </h1>
       <div class="skills">
         <p className="skill">
@@ -37,7 +37,12 @@ const Skills = () => {
 
       <div class="skills">
         <p className="skill">
-          EXPRESS <img src={skillImages.express} height={imgSize}></img>
+          EXPRESS
+          <img
+            id="expressSkill"
+            src={skillImages.express}
+            height={imgSize}
+          ></img>
         </p>
         <p className="skill">
           MONGODB <img src={skillImages.mongodb} height={imgSize}></img>
