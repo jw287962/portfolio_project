@@ -1,5 +1,12 @@
 /* ::root {
 } */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about > div > p {
   padding: 0px 40px;
   box-sizing: border-box;
@@ -21,6 +28,11 @@
   filter: blur(0px);
   opacity: 1;
 }
+.skillContainer {
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightblue;
+}
 
 .skills {
   display: flex;
@@ -30,7 +42,9 @@
   gap: 19px;
   font-size: 19px;
 }
-
+#expressSkill {
+  border-radius: 50%;
+}
 .skill {
   display: flex;
   flex-direction: column;

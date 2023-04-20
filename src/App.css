@@ -1,113 +1,130 @@
 .App {
   text-align: center;
 }
-
-.about{
+.intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  height: 100vh;
+  margin-top: -100px;
+}
+.jason {
+  color: rgb(0, 204, 255);
+  animation: textappear 2s ease-in-out 0s 1;
+  -webkit-text-stroke-color: black;
+}
+.intro > div > .rotate {
+  transform: rotate(90deg);
+  font-size: 30px;
+  font-weight: bolder;
+  animation: flash 2s ease-in infinite;
 }
 
-.home{
+.home {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-.home>h3>div{
+.home > h3 > div {
   display: flex;
   flex-direction: column;
 }
 
-main>h1,h4{
+main > h1,
+h4 {
   position: relative;
-  animation: textflyin 1s ease-in-out 0s 1;
+  animation: textflyin 0.9s ease-in 0s 1;
 }
-p{
-  animation: textappear 2.5s cubic-bezier(.78,-0.43,.18,1) 0s 1;
+p {
+  animation: textappear 2s cubic-bezier(0.78, -0.43, 0.18, 1) 0s 1;
 }
 
-.home{
+.home {
   /* animation: flyin 1.8s ease-out 0s 1; */
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* footer */
-
-footer{
-  border-top: 1px solid black;
-}
 /* each project card */
-.home>h3{
-margin: 25px;
+.home > h3 {
+  margin: 25px;
 }
-.links{
+.links {
   height: 100%;
   justify-content: space-between;
   border: 2px solid black;
 }
-.home>.hidden{
+.home > .hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
 }
-.home>.show{
+.home > .show {
   filter: blur(0);
   transform: translateX(0%);
   transition: all 1s;
   opacity: 1;
 }
+
 /* add delay for child cards */
 
-.show:nth-child(n){
+.show:nth-child(n) {
   transition-delay: 200ms;
 }
-.show:nth-child(2n){
+.show:nth-child(2n) {
   transition-delay: 400ms;
 }
 
-
-.weblink{
+.weblink {
   position: relative;
-  top:2px;
+  top: 2px;
 }
-.links>div{
+.links > div {
   margin-bottom: 15px;
 }
-.links>div>h3{
+.links > div > h3 {
   border-top: 1px solid grey;
   margin: 0px;
   padding-top: 15px;
 }
-.links>div>div{
+.links > div > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.links>img{
+.links > img {
   padding: 15px;
 }
 
-.links>div>.link>a{
+.links > div > .link > a {
   color: black;
   text-decoration: none;
 }
-.links>div>.link:hover{
- background-color: rgb(218, 218, 218);
+.links > div > .link:hover {
+  background-color: rgb(218, 218, 218);
 }
-a:hover{
-  scale: 1.2;  
+a:hover {
+  scale: 1.2;
 }
-.links>div>div>a{
+.links > div > div > a {
   padding: 0px 5px;
-  
 }
 
+.skillContainer > h1 {
+  padding-top: 20px;
+  margin: 0px;
+}
+/* footer */
+
+footer {
+  border-top: 1px solid black;
+}
 /* button project links*/
-.links>div>.link{
-background-color: white;
-padding: 7px;
-margin: 10px;
-border: 1px solid black;
-border-radius: 10px;
+.links > div > .link {
+  background-color: white;
+  padding: 7px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -119,9 +136,9 @@ border-radius: 10px;
   from {
     opacity: 0%;
   }
- 
+
   to {
-    opacity: 100%
+    opacity: 100%;
   }
 }
 
@@ -129,9 +146,9 @@ border-radius: 10px;
   from {
     opacity: 0%;
   }
- 
+
   to {
-    opacity: 100%
+    opacity: 100%;
   }
 }
 
@@ -139,8 +156,20 @@ border-radius: 10px;
   from {
     transform: translateY(-900vh);
   }
- 
+
   to {
     transform: translateY(0px);
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
   }
 }
