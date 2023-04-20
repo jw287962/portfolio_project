@@ -23,25 +23,17 @@
 
 .home {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 .home > h3 > div {
   display: flex;
   flex-direction: column;
 }
 
-main > h1,
-h4 {
-  position: relative;
-  animation: textflyin 0.9s ease-in 0s 1;
-}
-p {
-  animation: textappear 2s cubic-bezier(0.78, -0.43, 0.18, 1) 0s 1;
-}
-
 .home {
   /* animation: flyin 1.8s ease-out 0s 1; */
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 /* each project card */
@@ -56,11 +48,11 @@ p {
 .home > .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translate(-100%);
 }
 .home > .show {
   filter: blur(0);
-  transform: translateX(0%);
+  transform: translate(0%);
   transition: all 1s;
   opacity: 1;
 }
@@ -110,7 +102,7 @@ a:hover {
 }
 
 .skillContainer > h1 {
-  padding-top: 20px;
+  padding-top: 10px;
   margin: 0px;
 }
 /* footer */
@@ -127,8 +119,13 @@ footer {
   border-radius: 10px;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  main > h1,
+  h4 {
+    position: relative;
+    animation: textflyin 0.9s ease-in 0s 1;
+  }
+  p {
+    animation: textappear 2s cubic-bezier(0.78, -0.43, 0.18, 1) 0s 1;
   }
 }
 
@@ -171,5 +168,15 @@ footer {
   }
   to {
     opacity: 0%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

@@ -1,46 +1,41 @@
-
-
-.mainNav{
+.mainNav {
   border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
   align-items: center;
-  
-
 }
 
-.navList{
+.navList {
   display: flex;
   align-items: center;
-
 }
 
-.navList>li{
+.navList > li {
   padding: 10px;
   list-style: none;
 }
-.navList>li>a{
+.navList > li > a {
   display: flex;
   flex-direction: column;
   color: black;
   text-decoration: none;
   padding: 6px;
-  transition: color 0.5s ease-out,font-size 0.25s ease-out, width 1s ease-out;
+  transition: color 0.5s ease-out, font-size 0.25s ease-out, width 1s ease-out;
   background-color: white;
 }
-.navList>li>a::after{
+.navList > li > a::after {
   display: inline-block;
   transition: width 0.5s ease-out;
-  content: '';
+  content: "";
   width: 0px;
   border-bottom: 2px solid rgb(156, 210, 228);
 }
-.navList>li>a:hover::after{
+.navList > li > a:hover::after {
   width: 80%;
 }
 
-.navList>li>a:hover{
+.navList > li > a:hover {
   color: rgb(156, 210, 228);
   width: 100%;
   font-size: 18px;
@@ -56,11 +51,16 @@
   height: 20px;
 } */
 
-.github{
+.github {
   display: flex;
   align-items: center;
 }
-.navList>li>.imgLink:hover{
+.navList > li > .imgLink:hover {
   color: unset;
   background-color: unset;
+}
+@media (max-width: 450px) {
+  .navList > li {
+    padding: 2px;
+  }
 }

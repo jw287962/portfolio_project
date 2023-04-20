@@ -31,8 +31,8 @@ const About = () => {
         <p>
           Although I graduated as a Management Information Systems graduate at
           University of Georgia in 2020, I ended up not pursuing a job in my
-          field. I am currently 25 years old, and have discovered a new passion,
-          programming, through The Odin Project. 'You can view my projects{" "}
+          field. I am currently 25 years old, and have discovered a new passion
+          in programming. 'You can view my projects{" "}
           <a href="/portfolio_project/Home">here</a>. I am always eager for a
           challenge, finding enjoyment in problem solving and learning new
           things. Outside of programming, I enjoy hobbies such as playing sports
@@ -75,6 +75,9 @@ const About = () => {
         <h4>
           <strong>Email</strong>: jason.wongdevwork@gmail.com
         </h4>
+        <h1>Hobbies:</h1>
+        <h4>Valorant: Immortal 1 (Last Played: Nov 2022)</h4>
+        <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
       </div>
     </main>
   );

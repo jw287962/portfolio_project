@@ -13,15 +13,13 @@ import Skills from "./Skills";
 const Main = () => {
   useEffect(() => {
     let options = {
-      rootMargin: "100px",
+      rootMargin: "300px",
     };
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
         console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
         }
       });
     });
