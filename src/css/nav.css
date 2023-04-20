@@ -60,7 +60,11 @@
   background-color: unset;
 }
 @media (max-width: 450px) {
-  .navList > li {
-    padding: 2px;
+  .navList > li,
+  .navList {
+    padding: 0px;
+  }
+  .navList {
+    padding-left: 15px;
   }
 }
