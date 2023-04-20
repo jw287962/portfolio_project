@@ -10,7 +10,7 @@ import mysql from "../img/skills/mysql.png";
 import nodejs from "../img/skills/nodejs.png";
 import npm from "../img/skills/npm.png";
 import webpack from "../img/skills/webpack.png";
-import rest from "../img/skills/Rest.png";
+import rest from "../img/skills/rest.png";
 
 export const skillImages = {
   reactlogo,
