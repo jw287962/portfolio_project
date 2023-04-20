@@ -171,7 +171,7 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 28px;
   }
@@ -179,4 +179,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+.centerxy {
+  align-items: center;
+  justify-content: center;
 }

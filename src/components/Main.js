@@ -9,6 +9,8 @@ import Nav from "./Nav";
 import arrow from "../img/arrow.png";
 import { useEffect } from "react";
 
+import Icon from "@mdi/react";
+import { mdiFilePdfBox } from "@mdi/js";
 import Skills from "./Skills";
 const Main = () => {
   useEffect(() => {
@@ -183,6 +185,15 @@ const Main = () => {
       <h1>Contact Me:</h1>
       <h4>
         <strong>Email</strong>: jason.wongdevwork@gmail.com
+      </h4>
+      <h4 className="flexrow centerxy">
+        Resume:{" "}
+        <a
+          className="imgLink"
+          href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
+        >
+          <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
+        </a>
       </h4>
       <h1>Hobbies:</h1>
       <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
