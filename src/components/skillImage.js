@@ -1,4 +1,4 @@
-import reactlogo from "../img/skills/react.png";
+import reactlogo from "../img/skills/react.svg";
 
 import css from "../img/skills/css.png";
 import express from "../img/skills/express.png";
