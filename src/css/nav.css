@@ -67,4 +67,14 @@
   .navList {
     padding-left: 15px;
   }
+
+  .navList > li > a:hover {
+    color: rgb(156, 210, 228);
+    font-size: 12px;
+    width: auto;
+    /* border-bottom: 2px solid rgb(156, 210, 228); */
+  }
+  .navList > li > a:hover::after {
+    width: auto;
+  }
 }
