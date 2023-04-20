@@ -76,8 +76,8 @@ const About = () => {
           <strong>Email</strong>: jason.wongdevwork@gmail.com
         </h4>
         <h1>Hobbies:</h1>
-        <h4>Valorant: Immortal 1 (Last Played: Nov 2022)</h4>
         <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
+        <h4>Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)</h4>
       </div>
     </main>
   );
