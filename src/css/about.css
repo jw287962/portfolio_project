@@ -1,24 +1,38 @@
-.about>div>p{
+/* ::root {
+} */
+.about > div > p {
   padding: 0px 40px;
   box-sizing: border-box;
   font-size: 19px;
 }
 
-.about>div{
+.about > div {
   text-align: center;
 }
 
-.about>.hidden{
+.about > .hidden {
   opacity: 0;
   transform: translateX(-100%);
   filter: blur(5px);
 }
-.about>.show{
+.about > .show {
   transition: all 1s;
   transform: translateX(00%);
   filter: blur(0px);
   opacity: 1;
-
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  font-size: 19px;
+}
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
