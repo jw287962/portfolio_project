@@ -47,18 +47,16 @@ const About = () => {
       <div className="hidden">
         <h4>Jan 2022 - Before The Odin Project</h4>
         <p>
-          I started working at Juicy Seafood, a restaurant, where I was a
-          manager. After working 70-80 Hours a week until September of 2022, I
-          was able to lower that to around 60 - 65+ hours a week... Thank God!
-          With a little more time to spare, I started playing Valorant and
-          eventually reached Immortal 1 in just 2-3 months. At this point,
-          having reached the top 1%, and feeling like I've been wasting my time
-          with horrible work-life balance, I started to look for a new passion.
-          However, traits such as competitiveness, self-drive, and an innate
-          desire for self-improvement have always been following me through
-          these periods as evident in my rapid pace in Valorant. With that, I
-          decided to put my efforts in something new. This is when I decided to
-          really dive into TOP.
+          I started working at Juicy Seafood, where I was a manager. After
+          working 70-80 Hours a week until September of 2022, I was able to
+          lower that to around 60 - 65+ hours a week... Thank God! With a little
+          more time to spare, I started playing Valorant and eventually reached
+          Immortal 1 in just 2-3 months. At this point, having reached the top
+          1%, and feeling like I've been wasting my time with horrible work-life
+          balance, I started to look for a new passion. However, traits such as
+          competitiveness, self-drive, and an innate desire for self-improvement
+          have always been following me through these periods, as evident in my
+          rapid pace in Valorant...
         </p>
       </div>
       <div className="hidden">
