@@ -105,6 +105,9 @@ a:hover {
   padding-top: 10px;
   margin: 0px;
 }
+
+.weblink {
+}
 /* footer */
 
 footer {
@@ -180,16 +183,51 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
-
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
 .flexrow {
   display: flex;
   flex-direction: row;
 }
+.flexend {
+  justify-content: end;
+}
+.flexycenter {
+  align-items: center;
+}
+
 .centerxy {
   align-items: center;
   justify-content: center;
 }
-
+.verticalalign {
+  text-align: center;
+  vertical-align: middle;
+}
 .circle {
   border-radius: 50%;
+}
+
+.left {
+  width: 30px;
+  text-align: left;
+}
+.right {
+  text-align: right;
+  width: 400px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  list-style: none;
+}
+
+.hobbiesMargin {
+  margin: 0px;
+}
+@media (max-width: 450px) {
 }
