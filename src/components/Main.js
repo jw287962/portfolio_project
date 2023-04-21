@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// project images
+// Project Images
 import battleship from "../img/battleship.png";
 import twitter from "../img/twitterclone.png";
 import weather from "../img/weather.png";
@@ -9,7 +9,9 @@ import github from "../img/Github.png";
 import Nav from "./Nav";
 import arrow from "../img/arrow.png";
 //
-import medal from "../img/medal logo.png";
+
+import Hobbies from "./Hobbies";
+
 import { useEffect } from "react";
 
 import Icon from "@mdi/react";
@@ -185,33 +187,28 @@ const Main = () => {
       </div>
 
       <Skills></Skills>
-      <h1>Contact Me:</h1>
-      <h4>
-        <strong>Email</strong>: jason.wongdevwork@gmail.com
+
+      <h1>Contact Me</h1>
+      <h4 className="infoContainer centerxy">
+        <h4 className="flexrow">
+          <div className="left">Email</div>
+          <div className="right">jason.wongdevwork@gmail.com</div>
+        </h4>
+
+        <h4 className="flexrow centerxy">
+          <span className="left">Resume</span>
+          <div className="right">
+            <a
+              className="imgLink"
+              href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
+            >
+              <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
+            </a>
+          </div>
+        </h4>
       </h4>
-      <h4 className="flexrow centerxy">
-        Resume:{" "}
-        <a
-          className="imgLink"
-          href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
-        >
-          <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
-        </a>
-      </h4>
-      <h1>Hobbies:</h1>
-      <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
-      <h4>Reading: Novels, Manga, and for Learning</h4>
-      <h4 className="flexrow centerxy">
-        Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)
-        <a href="https://medal.tv/u/Veracid">
-          <img
-            className="weblink circle"
-            height="40"
-            width="40"
-            src={medal}
-          ></img>
-        </a>
-      </h4>
+
+      <Hobbies></Hobbies>
     </main>
   );
 };
