@@ -22,6 +22,9 @@ const Skills = () => {
 
       <div class="skills">
         <p className="skill">
+          JEST <img src={skillImages.jest} height={imgSize}></img>
+        </p>
+        <p className="skill">
           NODEJS <img src={skillImages.nodejs} height={imgSize}></img>
         </p>
         <p className="skill">
