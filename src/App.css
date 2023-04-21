@@ -230,4 +230,12 @@ li {
   margin: 0px;
 }
 @media (max-width: 450px) {
+  left {
+    width: 30px;
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+    width: 330px;
+  }
 }

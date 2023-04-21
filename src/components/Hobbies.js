@@ -35,8 +35,8 @@ const Hobbies = () => {
           <a href="https://medal.tv/u/Veracid">
             <img
               className="weblink circle"
-              height="40"
-              width="40"
+              height="35"
+              width="35"
               src={medal}
             ></img>
           </a>
