@@ -1,12 +1,15 @@
-### NPM RUN BUILD
+### NPM RUN BUILD || NPM RUN DEPLOY
 
--- updates hosting page
-
+-- updates hosting build file
 -- npm run deploy to deploy
 
 ### HOSTED SITE:
 
 https://jw287962.github.io/portfolio_project/
+
+### Icons
+
+-- Uses Material Icons from (https://pictogrammers.com/)
 
 # Getting Started with Create React App
 
