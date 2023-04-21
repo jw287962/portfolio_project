@@ -189,3 +189,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.circle {
+  border-radius: 50%;
+}

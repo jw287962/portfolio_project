@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// project images
 import battleship from "../img/battleship.png";
 import twitter from "../img/twitterclone.png";
 import weather from "../img/weather.png";
@@ -7,6 +8,8 @@ import calculator from "../img/calculator.png";
 import github from "../img/Github.png";
 import Nav from "./Nav";
 import arrow from "../img/arrow.png";
+//
+import medal from "../img/medal logo.png";
 import { useEffect } from "react";
 
 import Icon from "@mdi/react";
@@ -198,7 +201,17 @@ const Main = () => {
       <h1>Hobbies:</h1>
       <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
       <h4>Reading: Novels, Manga, and for Learning</h4>
-      <h4>Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)</h4>
+      <h4 className="flexrow centerxy">
+        Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)
+        <a href="https://medal.tv/u/Veracid">
+          <img
+            className="weblink circle"
+            height="40"
+            width="40"
+            src={medal}
+          ></img>
+        </a>
+      </h4>
     </main>
   );
 };

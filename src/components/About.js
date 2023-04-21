@@ -3,6 +3,7 @@ import "../css/about.css";
 import Nav from "./Nav";
 import { useEffect } from "react";
 
+import medal from "../img/medal logo.png";
 import Icon from "@mdi/react";
 import { mdiFilePdfBox } from "@mdi/js";
 import jason from "../img/jason.png";
@@ -88,7 +89,17 @@ const About = () => {
         </h4>
         <h1>Hobbies:</h1>
         <h4>Sports: Volleyball, Sprints, and Open to Others</h4>
-        <h4>Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)</h4>
+        <h4 className="flexrow centerxy">
+          Valorant: Immortal 1 in 41 Wins (Last Played: Nov 2022)
+          <a href="https://medal.tv/u/Veracid">
+            <img
+              className="weblink circle"
+              height="40"
+              width="40"
+              src={medal}
+            ></img>
+          </a>
+        </h4>
       </div>
     </main>
   );
