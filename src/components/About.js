@@ -40,7 +40,7 @@ const About = () => {
           Although I graduated as a Management Information Systems graduate at
           University of Georgia in 2020, I ended up not pursuing a job in my
           field. I am currently 25 years old, and have discovered a new passion
-          in programming. 'You can view my projects
+          in programming. You can view my projects
           <a href="/portfolio_project/Home"> here</a>.
         </p>
       </div>
