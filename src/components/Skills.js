@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="skillContainer">
       <h1>Skills </h1>
-      <div class="skills">
+      <div className="skills">
         <p className="skill">
           REACT <img src={skillImages.reactlogo} height={imgSize}></img>
         </p>
@@ -20,7 +20,7 @@ const Skills = () => {
         </p>
       </div>
 
-      <div class="skills">
+      <div className="skills">
         <p className="skill">
           JEST <img src={skillImages.jest} height={imgSize}></img>
         </p>
@@ -38,7 +38,7 @@ const Skills = () => {
         </p>
       </div>
 
-      <div class="skills">
+      <div className="skills">
         <p className="skill">
           EXPRESS
           <img

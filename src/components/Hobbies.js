@@ -5,8 +5,8 @@ const Hobbies = () => {
     <div>
       <h1>Hobbies</h1>
       <h4 className="flexrow centerxy hobbiesMargin">
-        <div class="left">Sports</div>{" "}
-        <div class="right">
+        <div className="left">Sports</div>{" "}
+        <div className="right">
           <ul>
             <li> Volleyball </li>
             <li>Sprinting</li>
@@ -15,8 +15,8 @@ const Hobbies = () => {
         </div>
       </h4>
       <h4 className="flexrow centerxy hobbiesMargin">
-        <div class="left">Reading</div>{" "}
-        <div class="right">
+        <div className="left">Reading</div>{" "}
+        <div className="right">
           <ul>
             <li>Novels </li>
             <li>Manga</li>
@@ -25,8 +25,8 @@ const Hobbies = () => {
         </div>
       </h4>
       <h4 className="flexrow centerxy hobbiesMargin">
-        <div class="left">Valorant</div>
-        <div class="right  flexycenter flexrow flexend">
+        <div className="left">Valorant</div>
+        <div className="right  flexycenter flexrow flexend">
           <ul>
             <li>Immortal 1 (Act Card Complete)</li>
             <li>Total Act Wins: 41</li>
