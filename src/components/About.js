@@ -19,7 +19,6 @@ const About = () => {
     let options = {};
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
@@ -76,7 +75,7 @@ const About = () => {
 
       <div className="hidden">
         <h1>Contact Me</h1>
-        <h4 className="infoContainer centerxy">
+        <div className="infoContainer centerxy">
           <h4 className="flexrow">
             <div className="left">Email</div>
             <div className="right">jason.wongdevwork@gmail.com</div>
@@ -93,7 +92,7 @@ const About = () => {
               </a>
             </div>
           </h4>
-        </h4>
+        </div>
         <Hobbies></Hobbies>
       </div>
     </main>

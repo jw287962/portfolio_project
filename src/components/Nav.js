@@ -10,18 +10,24 @@ import linkedin from "../img/Linkedin.png";
 import Icon from "@mdi/react";
 import { mdiFilePdfBox } from "@mdi/js";
 const Nav = () => {
-  const [home, setHome] = useState(true);
-
   const selected = (e) => {
-    document.getElementById("home").checked = true;
+    const eventTarget = e.target.htmlFor;
+    if (eventTarget) {
+      const radio = document.getElementById(eventTarget);
+      radio.checked = true;
+    }
   };
 
-  useEffect(() => {});
+  useEffect(() => {}, []);
   return (
     <nav className="mainNav">
       <h1>Jason Wong</h1>
 
-      <form onSubmit={(e) => {}}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         {/* <label className="navList"></label> */}
 
         <div className="navList">
@@ -32,34 +38,29 @@ const Nav = () => {
             </Link>
           </button>
 
-          <button>
+          <button onClick={selected}>
             <Link to={{ pathname: "/about" }}>
               <input type="radio" id="about" name="home"></input>
               <label htmlFor="about">About</label>
             </Link>
           </button>
 
-          <button>
-            <a className="imgLink" href="https://github.com/jw287962">
-              <img height="40" width="40" src={github}></img>
-            </a>
-          </button>
-          <button>
-            <a
-              className="imgLink"
-              href="https://www.linkedin.com/in/jason-wong-a796a2175/"
-            >
-              <img height="40" width="40" src={linkedin}></img>
-            </a>
-          </button>
-          <button>
-            <a
-              className="imgLink"
-              href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
-            >
-              <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
-            </a>
-          </button>
+          <a className="imgLink" href="https://github.com/jw287962">
+            <img height="40" width="40" src={github}></img>
+          </a>
+
+          <a
+            className="imgLink"
+            href="https://www.linkedin.com/in/jason-wong-a796a2175/"
+          >
+            <img height="40" width="40" src={linkedin}></img>
+          </a>
+          <a
+            className="imgLink"
+            href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
+          >
+            <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
+          </a>
         </div>
       </form>
 
