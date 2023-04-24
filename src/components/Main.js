@@ -6,6 +6,7 @@ import weather from "../img/weather.png";
 import todo from "../img/todo.png";
 import calculator from "../img/calculator.png";
 import github from "../img/Github.png";
+import knights from "../img/knight.png";
 import Nav from "./Nav";
 import arrow from "../img/arrow.png";
 //
@@ -165,8 +166,10 @@ const Main = () => {
         </h3>
         <h3 className="hidden">
           <div className="links">
-            <h3>Knight Travils:</h3>
+            <img src={knights} className="projects"></img>
             <div>
+              <h3>Knight Travils:</h3>
+
               <div>
                 <a href="https://jw287962.github.io/knight_travails/">
                   <img
