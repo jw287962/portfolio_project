@@ -101,27 +101,7 @@ const Main = () => {
             </div>
           </div>
         </h3>
-        <h3 className="hidden">
-          <div className="links">
-            <img src={todo} className="projects"></img>
-            <div>
-              <h3>Todo App:</h3>
-              <div>
-                <a href="https://jw287962.github.io/todo/">
-                  <img
-                    className="weblink"
-                    height="30"
-                    width="30"
-                    src={arrow}
-                  ></img>
-                </a>
-                <a href="https://github.com/jw287962/todo">
-                  <img height="40" width="40" src={github}></img>
-                </a>
-              </div>
-            </div>
-          </div>
-        </h3>
+
         <h3 className="hidden">
           <div className="links">
             <img src={battleship} className="projects"></img>
@@ -180,6 +160,27 @@ const Main = () => {
                   ></img>
                 </a>
                 <a href="https://github.com/jw287962/knight_travails">
+                  <img height="40" width="40" src={github}></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </h3>
+        <h3 className="hidden">
+          <div className="links">
+            <img src={todo} className="projects"></img>
+            <div>
+              <h3>Todo App:</h3>
+              <div>
+                <a href="https://jw287962.github.io/todo/">
+                  <img
+                    className="weblink"
+                    height="30"
+                    width="30"
+                    src={arrow}
+                  ></img>
+                </a>
+                <a href="https://github.com/jw287962/todo">
                   <img height="40" width="40" src={github}></img>
                 </a>
               </div>
