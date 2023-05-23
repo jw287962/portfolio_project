@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.f64e084a.css",
-    "main.js": "./static/js/main.7294f64c.js",
+    "main.js": "./static/js/main.59d25712.js",
     "static/js/787.071eb048.chunk.js": "./static/js/787.071eb048.chunk.js",
     "static/media/jason.png": "./static/media/jason.439676daa07159f075f5.png",
     "static/media/twitterclone.png": "./static/media/twitterclone.24b43cc2e9ed6af2e620.png",
@@ -15,19 +15,19 @@
     "static/media/html.webp": "./static/media/html.9ba5683e5bf3666e5666.webp",
     "static/media/calculator.png": "./static/media/calculator.76b9ad76493d49941a8e.png",
     "static/media/rest.png": "./static/media/rest.db89f876055e2ee62a5e.png",
-    "static/media/battleship.png": "./static/media/battleship.424e5bfef495f667cf91.png",
     "static/media/javascript.png": "./static/media/javascript.7f8751632b42a9932c15.png",
     "static/media/knight.png": "./static/media/knight.248e30a0f4642c802b6f.png",
+    "static/media/battleship.png": "./static/media/battleship.5cb4c158c601169a11f9.png",
     "static/media/express.png": "./static/media/express.b44f5a4b0ab040328aac.png",
     "static/media/mysql.png": "./static/media/mysql.4676ad983d6bd3e9fac9.png",
     "static/media/react.svg": "./static/media/react.011e7c1df86b45faf46cd92fe47d6bbd.svg",
     "index.html": "./index.html",
     "main.f64e084a.css.map": "./static/css/main.f64e084a.css.map",
-    "main.7294f64c.js.map": "./static/js/main.7294f64c.js.map",
+    "main.59d25712.js.map": "./static/js/main.59d25712.js.map",
     "787.071eb048.chunk.js.map": "./static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f64e084a.css",
-    "static/js/main.7294f64c.js"
+    "static/js/main.59d25712.js"
   ]
 }
