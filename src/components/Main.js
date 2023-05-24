@@ -86,7 +86,7 @@ const Main = () => {
             <div className="bottomBox">
               <h3>Weather App:</h3>
               <div>
-                <a href="https://jw287962.github.io/weather/">
+                <a href="https://jw287962.github.io/weather_ReactJS/">
                   <img
                     className="weblink"
                     height="30"
@@ -94,7 +94,7 @@ const Main = () => {
                     src={arrow}
                   ></img>
                 </a>
-                <a href="https://github.com/jw287962/weather">
+                <a href="https://github.com/jw287962/weather_ReactJS/tree/master">
                   <img height="40" width="40" src={github}></img>
                 </a>
               </div>
