@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.f64e084a.css",
-    "main.js": "./static/js/main.84166ec0.js",
+    "main.js": "./static/js/main.ba894562.js",
     "static/js/787.071eb048.chunk.js": "./static/js/787.071eb048.chunk.js",
     "static/media/jason.png": "./static/media/jason.439676daa07159f075f5.png",
     "static/media/twitterclone.png": "./static/media/twitterclone.24b43cc2e9ed6af2e620.png",
@@ -10,7 +10,7 @@
     "static/media/todo.png": "./static/media/todo.bd2081cd2b680b8de059.png",
     "static/media/css.png": "./static/media/css.75637854ae9526feeec9.png",
     "static/media/webpack.png": "./static/media/webpack.47692505d122dbcae490.png",
-    "static/media/weather.png": "./static/media/weather.e833d6e87d31a871b678.png",
+    "static/media/weather.png": "./static/media/weather.1afdff3a6430fd8fc8f8.png",
     "static/media/medal logo.png": "./static/media/medal logo.4ff63b5de5282c8289bb.png",
     "static/media/html.webp": "./static/media/html.9ba5683e5bf3666e5666.webp",
     "static/media/calculator.png": "./static/media/calculator.76b9ad76493d49941a8e.png",
@@ -23,11 +23,11 @@
     "static/media/react.svg": "./static/media/react.011e7c1df86b45faf46cd92fe47d6bbd.svg",
     "index.html": "./index.html",
     "main.f64e084a.css.map": "./static/css/main.f64e084a.css.map",
-    "main.84166ec0.js.map": "./static/js/main.84166ec0.js.map",
+    "main.ba894562.js.map": "./static/js/main.ba894562.js.map",
     "787.071eb048.chunk.js.map": "./static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f64e084a.css",
-    "static/js/main.84166ec0.js"
+    "static/js/main.ba894562.js"
   ]
 }
