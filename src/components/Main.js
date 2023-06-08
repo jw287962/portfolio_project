@@ -203,7 +203,7 @@ const Main = () => {
           <div className="right">
             <a
               className="imgLink"
-              href="https://drive.google.com/file/d/1gTqXxVsTTTF27J2j43TcvT-Vt1VutliI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1oBFNvUJ9Mahf-eqOoG6llNDY3DcUwPix/view?usp=sharing"
             >
               <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
             </a>
