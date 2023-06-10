@@ -197,7 +197,6 @@ const Main = () => {
           <div className="left">Email</div>
           <div className="right">jason.wongdevwork@gmail.com</div>
         </h4>
-
         <h4 className="flexrow centerxy">
           <span className="left">Resume</span>
           <div className="right">
