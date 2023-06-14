@@ -40,10 +40,11 @@ const About = () => {
       <div className="hidden">
         <h1>About Jason </h1>
         <p>
-          Although I graduated as a Management Information Systems graduate at
-          the University of Georgia in 2020, I did not pursue a job in my field.
-          I am currently {calculateAge()} years old and have discovered a new
-          passion in software development. You can view my projects
+          Although I graduated with a Bachelor's in Management Information
+          Systems at the University of Georgia in 2020, I did not pursue a job
+          in my field. I am currently {calculateAge()} years old and have
+          discovered a new passion in software development. You can view my
+          projects
           <a href="/portfolio_project/Home"> here</a>. You can read about my
           journey below.
         </p>
@@ -54,11 +55,11 @@ const About = () => {
           After joining Juicy Seafood as a manager, I worked exhausting hours,
           typically ranging from 70 to 80 hours per week until September 2022.
           Thankfully, I have reduced my workload to around 60-65+ hours per week
-          around August. With a bit more time on my hands, I started playing
-          Valorant and achieved an impressive feat of reaching Immortal 1 within
-          just 40 Wins and 1 Act (2 months). This accomplishment made me realize
-          that despite my grueling work schedule, I possess qualities such as
-          teamwork, competitiveness, self-drive, and an inherent drive for
+          around August. W With a bit more spare time, I started playing
+          Valorant and finished my Immortal 1 (Top 1%) Act Card within ~40 Wins
+          and 2 months (1 Act). This accomplishment made me realize that despite
+          my grueling work schedule, I possess qualities such as teamwork,
+          competitiveness, self-drive, and an inherent drive for
           self-improvement. These traits were evident in my swift progress in
           Valorant, a team-based competitive shooter. However, the lack of
           work-life balance and the feeling of wasting my time compelled me to
@@ -71,13 +72,14 @@ const About = () => {
           In November 2022, I wholeheartedly immersed myself in The Odin
           Project, and the experience has been incredibly enjoyable. I have
           relished the opportunity to learn and create various projects, and I
-          am eager to delve into a professional setting where I can apply my
-          skills. You can explore my projects on this website, with additional
-          ones available on my GitHub profile. Despite working 60+ hours a week,
-          I remained committed and dedicated to the path of learning by
-          completing these projects, showcasing my unwavering drive and passion
-          for software development. I eagerly anticipate leveraging my skills
-          and furthering my skills as a software developer.
+          am eager to delve into a professional setting where I can apply and
+          develop my skills further. You can explore my projects on this
+          website, with additional ones available on my GitHub profile. Despite
+          working 60+ hours a week, I remained committed and dedicated to the
+          path of learning by completing these projects, showcasing my
+          unwavering drive and passion for software development. I eagerly
+          anticipate leveraging my skills and furthering my skills as a software
+          developer.
         </p>
       </div>
 
