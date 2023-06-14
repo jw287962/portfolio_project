@@ -30,8 +30,9 @@ const About = () => {
     hiddenElements.forEach((el) => observer.observe(el));
   });
   function calculateAge() {
+    console.log((new Date(1997, 11) - new Date()) / 1000 / 60 / 60 / 365 / 24);
     return Math.floor(
-      (new Date(1997, 11) - new Date()) / 1000 / 60 / 60 / 365 / 24
+      (new Date() - new Date(1997, 11)) / 1000 / 60 / 60 / 365 / 24
     );
   }
   return (
@@ -41,7 +42,7 @@ const About = () => {
         <h1>About Jason </h1>
         <p>
           Although I graduated with a Bachelor's in Management Information
-          Systems at the University of Georgia in 2020, I did not pursue a job
+          Systems from the University of Georgia in 2020, I did not pursue a job
           in my field. I am currently {calculateAge()} years old and have
           discovered a new passion in software development. You can view my
           projects
