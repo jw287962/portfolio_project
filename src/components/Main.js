@@ -123,27 +123,7 @@ const Main = () => {
             </div>
           </div>
         </h3>
-        <h3 className="hidden">
-          <div className="links">
-            <img src={calculator} className="projects"></img>
-            <div>
-              <h3> Calculator:</h3>
-              <div>
-                <a href="https://jw287962.github.io/calculator/">
-                  <img
-                    className="weblink"
-                    height="30"
-                    width="30"
-                    src={arrow}
-                  ></img>
-                </a>
-                <a href="https://github.com/jw287962/calculator">
-                  <img height="40" width="40" src={github}></img>
-                </a>
-              </div>
-            </div>
-          </div>
-        </h3>
+
         <h3 className="hidden">
           <div className="links">
             <img src={knights} className="projects"></img>
@@ -166,13 +146,14 @@ const Main = () => {
             </div>
           </div>
         </h3>
+
         <h3 className="hidden">
           <div className="links">
-            <img src={todo} className="projects"></img>
+            <img src={calculator} className="projects"></img>
             <div>
-              <h3>Todo App:</h3>
+              <h3> Calculator:</h3>
               <div>
-                <a href="https://jw287962.github.io/todo/">
+                <a href="https://jw287962.github.io/calculator/">
                   <img
                     className="weblink"
                     height="30"
@@ -180,7 +161,7 @@ const Main = () => {
                     src={arrow}
                   ></img>
                 </a>
-                <a href="https://github.com/jw287962/todo">
+                <a href="https://github.com/jw287962/calculator">
                   <img height="40" width="40" src={github}></img>
                 </a>
               </div>
