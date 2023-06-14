@@ -30,9 +30,9 @@ const About = () => {
     hiddenElements.forEach((el) => observer.observe(el));
   });
   function calculateAge() {
-    const date1 = (new Date(1997, 11) - new Date()) / 1000 / 60 / 60 / 365 / 24;
-
-    return Math.floor(date1);
+    return Math.floor(
+      (new Date(1997, 11) - new Date()) / 1000 / 60 / 60 / 365 / 24
+    );
   }
   return (
     <main className="about">
@@ -69,16 +69,15 @@ const About = () => {
         <h4>Nov 2022 - The Odin Project</h4>
         <p>
           In November 2022, I wholeheartedly immersed myself in The Odin
-          Project, and the experience has been incredibly enjoyable. Solving new
-          problems and acquiring new knowledge has been truly enjoyable. I have
-          relished the opportunity to create various projects, and now I am
-          eager to delve into a professional setting where I can apply my
+          Project, and the experience has been incredibly enjoyable. I have
+          relished the opportunity to learn and create various projects, and I
+          am eager to delve into a professional setting where I can apply my
           skills. You can explore my projects on this website, with additional
           ones available on my GitHub profile. Despite working 60+ hours a week,
-          I remained committed and dedicated to completing these projects,
-          showcasing my unwavering drive and passion for software development. I
-          eagerly anticipate leveraging my skills and furthering my journey as a
-          software developer.
+          I remained committed and dedicated to the path of learning by
+          completing these projects, showcasing my unwavering drive and passion
+          for software development. I eagerly anticipate leveraging my skills
+          and furthering my skills as a software developer.
         </p>
       </div>
 
