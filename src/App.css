@@ -14,6 +14,15 @@
   animation: textappear 2s ease-in-out 0s 1;
   -webkit-text-stroke-color: black;
 }
+.introText {
+  position: relative;
+}
+.cursor {
+  animation: textappear 0.5s ease-in infinite;
+  position: relative;
+  left: -8px;
+  font-size: 35px;
+}
 .intro > div > .rotate {
   transform: rotate(90deg);
   font-size: 30px;

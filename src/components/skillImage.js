@@ -17,8 +17,10 @@ export const skillImages = [
   [
     { picture: angular, name: "ANGULAR" },
     { picture: reactlogo, name: "REACT" },
-    { picture: javascript, name: "JAVASCRIPT" },
+  ],
+  [
     { picture: css, name: "CSS" },
+    { picture: javascript, name: "JAVASCRIPT" },
     { picture: html, name: "HTML" },
   ],
   [

@@ -7,24 +7,38 @@ import todo from "../img/todo.png";
 import calculator from "../img/calculator.png";
 import knights from "../img/knight.png";
 import Nav from "./Nav";
-import arrow from "../img/arrow.png";
-import github from "../img/Github.png";
+
 import waldo from "../img/waldo.png";
+import react from "../img/skills/react.png";
+import angular from "../img/skills/angular.png";
 //
 
 import Project from "./Project";
 import Hobbies from "./Hobbies";
 
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import Icon from "@mdi/react";
 import { mdiFilePdfBox } from "@mdi/js";
 import Skills from "./Skills";
+
 const Main = () => {
+  const [updateIntroInterval, setUpdateIntroInterval] = useState("");
+  let num = useRef(0);
+  let index = useRef(0);
+  let toggle = useRef(true);
+  const mytext = [
+    "a software developer.",
+    "a quick learner.",
+    "a problem solver.",
+  ];
+
+  const [intro, setIntro] = useState(mytext[index.current]);
   useEffect(() => {
     let options = {
-      rootMargin: "300px",
+      rootMargin: "0px",
     };
+
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -36,6 +50,28 @@ const Main = () => {
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
   });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (toggle.current) {
+        setUpdateIntroInterval(updateIntroInterval + intro[num.current++]);
+      } else {
+        setUpdateIntroInterval(intro.substring(0, --num.current));
+      }
+      if (intro.length === num.current || num.current === 0) {
+        toggle.current = !toggle.current;
+      }
+      if (num.current === 0) {
+        index.current++;
+        index.current = index.current % mytext.length;
+        setIntro(mytext[index.current]);
+      }
+    }, 150);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [intro, updateIntroInterval]);
   return (
     <main>
       <base target="_blank"></base>
@@ -43,7 +79,9 @@ const Main = () => {
         <h1>
           Hi, I'm <span className="jason">Jason</span>
         </h1>
-        <h1>I'm a software developer. </h1>
+        <h1 className="introText">
+          I'm {updateIntroInterval} <span className="cursor">|</span>
+        </h1>
         <div>
           <button
             className="rotate"
@@ -65,6 +103,7 @@ const Main = () => {
           text={"Twitter Clone"}
           liveWebsite={"https://twitter-clone-33714.web.app/"}
           gitLink={"https://github.com/jw287962/twitter-clone"}
+          framework={react}
         ></Project>
 
         <Project
@@ -72,6 +111,20 @@ const Main = () => {
           text={"Weather Site"}
           liveWebsite={"https://jw287962.github.io/weather_ReactJS/"}
           gitLink={"https://github.com/jw287962/weather_ReactJS/tree/master"}
+          framework={react}
+        ></Project>
+        <Project
+          projectImage={waldo}
+          text={"Where's Waldo"}
+          liveWebsite={"https://jw287962.github.io/angularWaldo/"}
+          gitLink={"https://github.com/jw287962/angularWaldo"}
+          framework={angular}
+        ></Project>
+        <Project
+          projectImage={knights}
+          text={"Knight Travails"}
+          liveWebsite={"https://jw287962.github.io/knight_travails/"}
+          gitLink={"https://github.com/jw287962/knight_travails"}
         ></Project>
 
         <Project
@@ -82,24 +135,10 @@ const Main = () => {
         ></Project>
 
         <Project
-          projectImage={knights}
-          text={"Knight Travails"}
-          liveWebsite={"https://jw287962.github.io/knight_travails/"}
-          gitLink={"https://github.com/jw287962/knight_travails"}
-        ></Project>
-
-        <Project
           projectImage={calculator}
           text={"Calculator"}
           liveWebsite={"https://jw287962.github.io/calculator/"}
           gitLink={"https://github.com/jw287962/calculators"}
-        ></Project>
-
-        <Project
-          projectImage={waldo}
-          text={"Where's Waldo"}
-          liveWebsite={"https://jw287962.github.io/angularWaldo/"}
-          gitLink={"https://github.com/jw287962/angularWaldo"}
         ></Project>
       </div>
 

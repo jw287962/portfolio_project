@@ -7,11 +7,11 @@ const Skills = () => {
   return (
     <div className="skillContainer">
       <h1>Skills </h1>
-      {skillImages.map((ele) => {
+      {skillImages.map((ele, i) => {
         return (
-          <div className="skills">
+          <div className="skills" key={`skills${i}`}>
             {ele.map((skills) => (
-              <SingleSkill logo={skills}></SingleSkill>
+              <SingleSkill logo={skills} key={`${skills.name}`}></SingleSkill>
             ))}
           </div>
         );
