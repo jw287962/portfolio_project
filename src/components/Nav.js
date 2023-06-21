@@ -57,7 +57,7 @@ const Nav = () => {
           </a>
           <a
             className="imgLink"
-            href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
+            href="https://docs.google.com/document/d/0Bz4ixU0mSpzJNnlpSENuVzlGVEE/edit?resourcekey=0-dbVkzmv5MgXhl2TphCfHkw"
           >
             <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
           </a>

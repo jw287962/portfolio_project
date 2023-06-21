@@ -156,7 +156,7 @@ const Main = () => {
           <div className="right">
             <a
               className="imgLink"
-              href="https://docs.google.com/document/d/0Bz4ixU0mSpzJNnlpSENuVzlGVEE/edit?usp=sharing&ouid=117949838578850311982&resourcekey=0-dbVkzmv5MgXhl2TphCfHkw&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/0Bz4ixU0mSpzJNnlpSENuVzlGVEE/edit?resourcekey=0-dbVkzmv5MgXhl2TphCfHkw"
             >
               <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
             </a>
