@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.0354ec6c.css",
-    "main.js": "./static/js/main.b43c2fe1.js",
+    "main.js": "./static/js/main.d0bcc15e.js",
     "static/js/787.071eb048.chunk.js": "./static/js/787.071eb048.chunk.js",
+    "static/media/waldo.png": "./static/media/waldo.0e1b2a5dfebd7aeb1d5d.png",
     "static/media/jason.png": "./static/media/jason.439676daa07159f075f5.png",
     "static/media/twitterclone.png": "./static/media/twitterclone.24b43cc2e9ed6af2e620.png",
     "static/media/Roboto-Regular.ttf": "./static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -10,6 +11,7 @@
     "static/media/todo.png": "./static/media/todo.bd2081cd2b680b8de059.png",
     "static/media/css.png": "./static/media/css.75637854ae9526feeec9.png",
     "static/media/webpack.png": "./static/media/webpack.47692505d122dbcae490.png",
+    "static/media/angular.png": "./static/media/angular.b6d2a9dec3e43e0ffb95.png",
     "static/media/weather.png": "./static/media/weather.9d3332df7cac35cacd00.png",
     "static/media/medal logo.png": "./static/media/medal logo.4ff63b5de5282c8289bb.png",
     "static/media/html.webp": "./static/media/html.9ba5683e5bf3666e5666.webp",
@@ -23,11 +25,11 @@
     "static/media/react.svg": "./static/media/react.011e7c1df86b45faf46cd92fe47d6bbd.svg",
     "index.html": "./index.html",
     "main.0354ec6c.css.map": "./static/css/main.0354ec6c.css.map",
-    "main.b43c2fe1.js.map": "./static/js/main.b43c2fe1.js.map",
+    "main.d0bcc15e.js.map": "./static/js/main.d0bcc15e.js.map",
     "787.071eb048.chunk.js.map": "./static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0354ec6c.css",
-    "static/js/main.b43c2fe1.js"
+    "static/js/main.d0bcc15e.js"
   ]
 }
