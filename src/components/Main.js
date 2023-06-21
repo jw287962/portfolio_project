@@ -11,6 +11,7 @@ import Nav from "./Nav";
 import waldo from "../img/waldo.png";
 import react from "../img/skills/react.png";
 import angular from "../img/skills/angular.png";
+import typescript from "../img/skills/typescript.svg";
 //
 
 import Project from "./Project";
@@ -118,7 +119,7 @@ const Main = () => {
           text={"Where's Waldo"}
           liveWebsite={"https://jw287962.github.io/angularWaldo/"}
           gitLink={"https://github.com/jw287962/angularWaldo"}
-          framework={angular}
+          frameworkArray={[angular, typescript]}
         ></Project>
         <Project
           projectImage={knights}

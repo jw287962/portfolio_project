@@ -12,6 +12,7 @@ import webpack from "../img/skills/webpack.png";
 import rest from "../img/skills/rest.png";
 import jest from "../img/skills/jest.png";
 import angular from "../img/skills/angular.png";
+import typescript from "../img/skills/typescript.svg";
 
 export const skillImages = [
   [
@@ -20,6 +21,7 @@ export const skillImages = [
   ],
   [
     { picture: css, name: "CSS" },
+    { picture: typescript, name: "TYPESCRIPT" },
     { picture: javascript, name: "JAVASCRIPT" },
     { picture: html, name: "HTML" },
   ],

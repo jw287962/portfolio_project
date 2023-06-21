@@ -2,7 +2,14 @@ import arrow from "../img/arrow.png";
 import github from "../img/Github.png";
 import "../css/project.css";
 
-const Project = ({ projectImage, liveWebsite, gitLink, text, framework }) => {
+const Project = ({
+  projectImage,
+  liveWebsite,
+  gitLink,
+  text,
+  framework,
+  frameworkArray,
+}) => {
   return (
     <h3 className="hidden">
       <div className="links">
@@ -14,6 +21,13 @@ const Project = ({ projectImage, liveWebsite, gitLink, text, framework }) => {
             src={framework}
           ></img>
         )}
+        <div className="frameworkArray">
+          {frameworkArray &&
+            frameworkArray.map((ele) => {
+              return <img height="30" width="30" src={ele}></img>;
+            })}
+        </div>
+
         <img src={projectImage} className="projects"></img>
         <div className="bottomBox">
           <h3>{text}</h3>
