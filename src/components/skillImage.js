@@ -1,5 +1,4 @@
 import reactlogo from "../img/skills/react.svg";
-
 import css from "../img/skills/css.png";
 import express from "../img/skills/express.png";
 import git from "../img/skills/git.png";
@@ -11,20 +10,28 @@ import nodejs from "../img/skills/nodejs.png";
 import npm from "../img/skills/npm.png";
 import webpack from "../img/skills/webpack.png";
 import rest from "../img/skills/rest.png";
-import jest from "../img/jest.png";
+import jest from "../img/skills/jest.png";
+import angular from "../img/skills/angular.png";
 
-export const skillImages = {
-  reactlogo,
-  css,
-  express,
-  git,
-  html,
-  javascript,
-  mongodb,
-  mysql,
-  nodejs,
-  npm,
-  webpack,
-  rest,
-  jest,
-};
+export const skillImages = [
+  [
+    { picture: angular, name: "ANGULAR" },
+    { picture: reactlogo, name: "REACT" },
+    { picture: javascript, name: "JAVASCRIPT" },
+    { picture: css, name: "CSS" },
+    { picture: html, name: "HTML" },
+  ],
+  [
+    { picture: npm, name: "NPM" },
+    { picture: nodejs, name: "NODEJS" },
+    { picture: webpack, name: "WEBPACK" },
+    { picture: git, name: "GIT" },
+    { picture: jest, name: "JEST" },
+  ],
+  [
+    { picture: express, name: "EXPRESS" },
+    { picture: mongodb, name: "MONGODB" },
+    { picture: mysql, name: "MYSQL" },
+    { picture: rest, name: "RESTful API" },
+  ],
+];

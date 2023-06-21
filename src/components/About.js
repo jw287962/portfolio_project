@@ -54,17 +54,19 @@ const About = () => {
         <h4>Jan 2022 - Before The Odin Project</h4>
         <p>
           After joining Juicy Seafood as a manager, I worked exhausting hours,
-          typically ranging from 70 to 80 hours per week until September 2022.
-          Thankfully, I have reduced my workload to around 60-65+ hours per week
-          around August. W With a bit more spare time, I started playing
-          Valorant and finished my Immortal 1 (Top 1%) Act Card within ~40 Wins
-          and 2 months (1 Act). This accomplishment made me realize that despite
-          my grueling work schedule, I possess qualities such as teamwork,
-          competitiveness, self-drive, and an inherent drive for
-          self-improvement. These traits were evident in my swift progress in
-          Valorant, a team-based competitive shooter. However, the lack of
-          work-life balance and the feeling of wasting my time compelled me to
-          explore new career opportunities.
+          typically ranging from 70 to 80 hours per week until August 2022.
+          Afterwards, I reduced my hours to around 60+ hours per week. With a
+          bit more spare time, I started playing Valorant and finished my
+          Immortal 1 (Top 1%) Act Card within ~40 Wins and 2 months (1 Act).
+          This accomplishment made me realize that despite my grueling work
+          schedule, I possess qualities such as teamwork, competitiveness,
+          self-drive, and an inherent drive for self-improvement. These traits
+          were evident in my swift progress in Valorant, a team-based
+          competitive shooter. Because my current career path in restaurant
+          management has become monotonous and exhausting with terrible
+          work-life balance, I was compelled to utilize these traits towards a
+          new career path that would be more fulfilling and intellectually
+          stimulating.
         </p>
       </div>
       <div className="hidden">

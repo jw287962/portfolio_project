@@ -15,7 +15,9 @@
   max-width: 700px;
 }
 
-.about > div {
+.about > .skillContainer,
+.about > div > h1,
+.about > div > h4 {
   text-align: center;
 }
 
