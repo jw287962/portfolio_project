@@ -43,9 +43,12 @@ const About = () => {
         <p>
           Although I graduated with a Bachelor's in Management Information
           Systems from the University of Georgia in 2020, I did not pursue a job
-          in my field. I am currently {calculateAge()} years old and have
-          discovered a new passion in software development. You can view my
-          projects
+          in my field. I faced challenges with my confidence and often succumbed
+          to fear, which resulted in missed internship opportunities and a
+          tendency to avoid problems. I have since developed and refined
+          essential soft skills after becoming a franchisee owner from 2020 to
+          2021. I am {calculateAge()} years old and have discovered a new
+          passion in software development. You can view my projects
           <a href="/portfolio_project/Home"> here</a>. You can read about my
           journey below.
         </p>
@@ -54,34 +57,29 @@ const About = () => {
         <h4>Jan 2022 - Before The Odin Project</h4>
         <p>
           After joining Juicy Seafood as a manager, I worked exhausting hours,
-          typically ranging from 70 to 80 hours per week until August 2022.
-          Afterwards, I reduced my hours to around 60+ hours per week. With a
-          bit more spare time, I started playing Valorant and finished my
-          Immortal 1 (Top 1%) Act Card within ~40 Wins and 2 months (1 Act).
-          This accomplishment made me realize that despite my grueling work
-          schedule, I possess qualities such as teamwork, competitiveness,
-          self-drive, and an inherent drive for self-improvement. These traits
-          were evident in my swift progress in Valorant, a team-based
-          competitive shooter. Because my current career path in restaurant
-          management has become monotonous and exhausting with terrible
-          work-life balance, I was compelled to utilize these traits towards a
-          new career path that would be more fulfilling and intellectually
-          stimulating.
+          typically between 70 to 80 hours per week. Around August 2022, I
+          finally reduced my hours to around 60+ per week. With a bit more spare
+          time, I started playing Valorant, a team-based competitive shooter.
+          Consequently, I finished my Immortal 1 (Top 1%) Act Card after ~40
+          Wins and two months (1 Act) of gameplay. This achievement highlighted
+          qualities such as collaboration, competitiveness, self-motivation, and
+          an innate desire for growth. It also sparked a strong aspiration to
+          pursue a new career. One where I can actively pursue personal growth,
+          face and overcome challenges, and enjoy.
         </p>
       </div>
       <div className="hidden">
         <h4>Nov 2022 - The Odin Project</h4>
         <p>
-          In November 2022, I wholeheartedly immersed myself in The Odin
-          Project, and the experience has been incredibly enjoyable. I have
-          relished the opportunity to learn and create various projects, and I
-          am eager to delve into a professional setting where I can apply and
-          develop my skills further. You can explore my projects on this
-          website, with additional ones available on my GitHub profile. Despite
-          working 60+ hours a week, I remained committed and dedicated to the
-          path of learning by completing these projects, showcasing my
-          unwavering drive and passion for software development. I eagerly
-          anticipate leveraging my skills and furthering my skills as a software
+          As a result, in November 2022, I wholeheartedly immersed myself in The
+          Odin Project. The experience has been incredible. I have relished the
+          opportunity to learn and create various projects, and I am eager to
+          delve into a professional setting where I can apply and develop my
+          skills further. You can explore my projects on this website, with more
+          available on my GitHub profile. Despite working 60+ hours a week, I
+          remained committed and dedicated to learning by completing these
+          projects, showcasing my unwavering passion for software development. I
+          eagerly anticipate leveraging and furthering my skills as a software
           developer.
         </p>
       </div>
