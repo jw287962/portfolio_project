@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2889268b.css",
+    "main.js": "./static/js/main.f30da7ba.js",
+    "static/js/787.071eb048.chunk.js": "./static/js/787.071eb048.chunk.js",
+    "static/media/waldo.png": "./static/media/waldo.0e1b2a5dfebd7aeb1d5d.png",
+    "static/media/jason.png": "./static/media/jason.439676daa07159f075f5.png",
+    "static/media/twitterclone.png": "./static/media/twitterclone.24b43cc2e9ed6af2e620.png",
+    "static/media/Roboto-Regular.ttf": "./static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "./static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/css.png": "./static/media/css.75637854ae9526feeec9.png",
+    "static/media/webpack.png": "./static/media/webpack.47692505d122dbcae490.png",
+    "static/media/angular.png": "./static/media/angular.b6d2a9dec3e43e0ffb95.png",
+    "static/media/weather.png": "./static/media/weather.9d3332df7cac35cacd00.png",
+    "static/media/medal logo.png": "./static/media/medal logo.4ff63b5de5282c8289bb.png",
+    "static/media/html.webp": "./static/media/html.9ba5683e5bf3666e5666.webp",
+    "static/media/calculator.png": "./static/media/calculator.76b9ad76493d49941a8e.png",
+    "static/media/rest.png": "./static/media/rest.db89f876055e2ee62a5e.png",
+    "static/media/javascript.png": "./static/media/javascript.7f8751632b42a9932c15.png",
+    "static/media/knight.png": "./static/media/knight.248e30a0f4642c802b6f.png",
+    "static/media/battleship.png": "./static/media/battleship.5cb4c158c601169a11f9.png",
+    "static/media/express.png": "./static/media/express.b44f5a4b0ab040328aac.png",
+    "static/media/mysql.png": "./static/media/mysql.4676ad983d6bd3e9fac9.png",
+    "static/media/react.svg": "./static/media/react.011e7c1df86b45faf46cd92fe47d6bbd.svg",
+    "static/media/typescript.svg": "./static/media/typescript.32fb130a1a03eac5cd3d509d5b96f188.svg",
+    "index.html": "./index.html",
+    "main.2889268b.css.map": "./static/css/main.2889268b.css.map",
+    "main.f30da7ba.js.map": "./static/js/main.f30da7ba.js.map",
+    "787.071eb048.chunk.js.map": "./static/js/787.071eb048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2889268b.css",
+    "static/js/main.f30da7ba.js"
+  ]
+}
