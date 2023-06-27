@@ -3,7 +3,7 @@ import SingleSkill from "./SingleSkill";
 import "../css/skills.css";
 
 const Skills = () => {
-  const imgSize = 50;
+  // const imgSize = 50;
   return (
     <div className="skillContainer">
       <h1>Skills </h1>

@@ -1,7 +1,7 @@
 import "../css/nav.css";
 import { Link } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // IMAGES FOR NAVLINK
 import github from "../img/Github.png";
@@ -46,14 +46,19 @@ const Nav = () => {
           </button>
 
           <a className="imgLink" href="https://github.com/jw287962">
-            <img height="40" width="40" src={github}></img>
+            <img height="40" width="40" src={github} alt="github logo"></img>
           </a>
 
           <a
             className="imgLink"
             href="https://www.linkedin.com/in/jason-wong-a796a2175/"
           >
-            <img height="40" width="40" src={linkedin}></img>
+            <img
+              height="40"
+              width="40"
+              src={linkedin}
+              alt="linkedIn logo"
+            ></img>
           </a>
           <a
             className="imgLink"

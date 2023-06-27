@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import '../css/about.css'
 import Nav from './Nav';
-import { useEffect } from 'react';
 const About = () => {
 
   
