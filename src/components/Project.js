@@ -19,16 +19,21 @@ const Project = ({
             height="30"
             width="30"
             src={framework}
+            alt=""
           ></img>
         )}
         <div className="frameworkArray">
           {frameworkArray &&
             frameworkArray.map((ele) => {
-              return <img height="30" width="30" src={ele}></img>;
+              return <img height="30" width="30" src={ele} alt=""></img>;
             })}
         </div>
 
-        <img src={projectImage} className="projects"></img>
+        <img
+          src={projectImage}
+          className="projects"
+          alt="a project website"
+        ></img>
         <div className="bottomBox">
           <h3>{text}</h3>
 

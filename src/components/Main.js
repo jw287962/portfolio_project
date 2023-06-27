@@ -21,17 +21,16 @@ import { useEffect, useState, useRef } from "react";
 // import Icon from "@mdi/react";
 // import { mdiFilePdfBox } from "@mdi/js";
 import Skills from "./Skills";
-
+const mytext = [
+  "a software developer.",
+  "a quick learner.",
+  "a problem solver.",
+];
 const Main = () => {
   const [updateIntroInterval, setUpdateIntroInterval] = useState("");
   let num = useRef(0);
   let index = useRef(0);
   let toggle = useRef(true);
-  const mytext = [
-    "a software developer.",
-    "a quick learner.",
-    "a problem solver.",
-  ];
 
   const [intro, setIntro] = useState(mytext[index.current]);
   // let options = {
