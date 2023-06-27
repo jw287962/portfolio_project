@@ -26,7 +26,7 @@ const mytext = [
   "a quick learner.",
   "a problem solver.",
 ];
-const Main = () => {
+const Main = ({ ignore }) => {
   const [updateIntroInterval, setUpdateIntroInterval] = useState("");
   let num = useRef(0);
   let index = useRef(0);
@@ -37,16 +37,18 @@ const Main = () => {
   //   rootMargin: "0px",
   // };
   useEffect(() => {
-    const observer = new IntersectionObserver((entries, options) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
+    if (!ignore) {
+      const observer = new IntersectionObserver((entries, options) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
       });
-    });
 
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
+    }
   });
 
   useEffect(() => {

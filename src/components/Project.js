@@ -24,8 +24,16 @@ const Project = ({
         )}
         <div className="frameworkArray">
           {frameworkArray &&
-            frameworkArray.map((ele) => {
-              return <img height="30" width="30" src={ele} alt=""></img>;
+            frameworkArray.map((ele, i) => {
+              return (
+                <img
+                  height="30"
+                  width="30"
+                  src={ele}
+                  alt=""
+                  key={`image${i}`}
+                ></img>
+              );
             })}
         </div>
 
