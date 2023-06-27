@@ -1,22 +1,19 @@
 import "../css/about.css";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
+import ContactMe from "./ContactMe";
 // Components
-import Nav from "./Nav";
 import Hobbies from "./Hobbies";
 
 // Images & Material Icons
-import Icon from "@mdi/react";
-import { mdiFilePdfBox } from "@mdi/js";
-import medal from "../img/medal logo.png";
+
 import jason from "../img/jason.png";
 import Skills from "../components/Skills";
 
 const About = () => {
   useEffect(() => {
-    let options = {};
+    // let options = {};
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -87,25 +84,7 @@ const About = () => {
       <Skills></Skills>
 
       <div className="hidden">
-        <h1>Contact Me</h1>
-        <div className="infoContainer centerxy">
-          <h4 className="flexrow">
-            <div className="left">Email</div>
-            <div className="right">jason.wongdevwork@gmail.com</div>
-          </h4>
-
-          <h4 className="flexrow centerxy">
-            <span className="left">Resume</span>
-            <div className="right">
-              <a
-                className="imgLink"
-                href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
-              >
-                <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
-              </a>
-            </div>
-          </h4>
-        </div>
+        <ContactMe></ContactMe>
         <Hobbies></Hobbies>
       </div>
     </main>
