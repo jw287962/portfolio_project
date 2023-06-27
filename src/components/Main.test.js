@@ -6,7 +6,6 @@ import Main from "./Main";
 // window.IntersectionObserver = jest
 //   .fn()
 //   .mockImplementation(intersectionObserverMock);
-
 window.test("renders home page, i am jason", () => {
   render(<Main ignore={true} />);
   const linkElement = screen.getByText(/Hi, I'm/i);
