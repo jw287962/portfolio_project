@@ -1,19 +1,17 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // Project Images
 import battleship from "../img/battleship.png";
 import twitter from "../img/twitterclone.png";
 import weather from "../img/weather.png";
-import todo from "../img/todo.png";
 import calculator from "../img/calculator.png";
 import knights from "../img/knight.png";
-import Nav from "./Nav";
 
 import waldo from "../img/waldo.png";
 import react from "../img/skills/react.png";
 import angular from "../img/skills/angular.png";
 import typescript from "../img/skills/typescript.svg";
-//
 
+//Component
 import Project from "./Project";
 import Hobbies from "./Hobbies";
 import ContactMe from "./ContactMe";
