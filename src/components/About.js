@@ -34,7 +34,7 @@ const About = () => {
   }
   return (
     <main className="about">
-      <img src={jason} height="250px"></img>
+      <img src={jason} height="250px" alt=""></img>
       <div className="hidden">
         <h1>About Jason </h1>
         <p>

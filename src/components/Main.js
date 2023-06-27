@@ -34,11 +34,10 @@ const Main = () => {
   ];
 
   const [intro, setIntro] = useState(mytext[index.current]);
+  // let options = {
+  //   rootMargin: "0px",
+  // };
   useEffect(() => {
-    let options = {
-      rootMargin: "0px",
-    };
-
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

@@ -34,10 +34,16 @@ const Project = ({
 
           <div>
             <a href={`${liveWebsite}`}>
-              <img className="weblink" height="30" width="30" src={arrow}></img>
+              <img
+                className="weblink"
+                height="30"
+                width="30"
+                src={arrow}
+                alt="Live Site Link"
+              ></img>
             </a>
             <a href={`${gitLink}`}>
-              <img height="38" width="38" src={github}></img>
+              <img height="38" width="38" src={github} alt="Github link"></img>
             </a>
           </div>
         </div>

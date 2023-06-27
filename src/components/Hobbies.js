@@ -38,6 +38,7 @@ const Hobbies = () => {
               height="35"
               width="35"
               src={medal}
+              alt="Link to Medal.tv"
             ></img>
           </a>
         </div>
