@@ -1,9 +1,9 @@
 name: Deploy On Push
 on: [push]
 
-env:
-  AZURE_WEBAPP_NAME: Jasono's Portfolio # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: "" # set this to the path to your web app project, defaults to the repository root
+# env:
+#   AZURE_WEBAPP_NAME: Jasono's Portfolio # set this to your application's name
+#   AZURE_WEBAPP_PACKAGE_PATH: "" # set this to the path to your web app project, defaults to the repository root
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
