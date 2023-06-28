@@ -1,9 +1,10 @@
 import "./App.css";
 import Main from "./components/Main";
+import { useEffect } from "react";
 function App() {
-  // useEffect(() => {
-  //   document.title = "Jason Portfolio";
-  // }, []);
+  useEffect(() => {
+    document.title = "Jason's Portfolio";
+  }, []);
 
   return (
     <div className="App">
