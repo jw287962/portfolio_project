@@ -63,7 +63,7 @@ const Project = ({
           </div>
           {backendLink && (
             <div>
-              Express:
+              Backend:
               <a href={`${backendLink}`}>
                 <img
                   height="38"
