@@ -3,11 +3,13 @@
 import battleship from "../img/battleship.png";
 import twitter from "../img/twitterclone.png";
 import weather from "../img/weather.png";
-import calculator from "../img/calculator.png";
+// import calculator from "../img/calculator.png";
+import smoothDining from "../img/skills/SmoothDining.png";
 import knights from "../img/knight.png";
 
 import waldo from "../img/waldo.png";
 import react from "../img/skills/react.png";
+import express from "../img/skills/express.png";
 import angular from "../img/skills/angular.png";
 import typescript from "../img/skills/typescript.svg";
 
@@ -99,11 +101,13 @@ const Main = ({ ignore }) => {
 
       <div className="home">
         <Project
-          projectImage={twitter}
-          text={"Twitter Clone"}
-          liveWebsite={"https://twitter-clone-33714.web.app/"}
-          gitLink={"https://github.com/jw287962/twitter-clone"}
-          framework={react}
+          projectImage={smoothDining}
+          text={"SmoothDining"}
+          liveWebsite={"https://jw287962.github.io/smoothDiningAngular"}
+          gitLink={"https://github.com/jw287962/smoothDiningAngular"}
+          backendLink={"https://github.com/jw287962/smoothdining_API"}
+          backendImage={express}
+          frameworkArray={[angular, typescript, express]}
         ></Project>
 
         <Project
@@ -111,6 +115,13 @@ const Main = ({ ignore }) => {
           text={"Weather Site"}
           liveWebsite={"https://jw287962.github.io/weather_ReactJS/"}
           gitLink={"https://github.com/jw287962/weather_ReactJS/tree/master"}
+          framework={react}
+        ></Project>
+        <Project
+          projectImage={twitter}
+          text={"Twitter Clone"}
+          liveWebsite={"https://twitter-clone-33714.web.app/"}
+          gitLink={"https://github.com/jw287962/twitter-clone"}
           framework={react}
         ></Project>
         <Project
@@ -132,13 +143,6 @@ const Main = ({ ignore }) => {
           text={"Battleship Game"}
           liveWebsite={"https://jw287962.github.io/battleship/"}
           gitLink={"https://github.com/jw287962/battleship"}
-        ></Project>
-
-        <Project
-          projectImage={calculator}
-          text={"Calculator"}
-          liveWebsite={"https://jw287962.github.io/calculator/"}
-          gitLink={"https://github.com/jw287962/calculators"}
         ></Project>
       </div>
 

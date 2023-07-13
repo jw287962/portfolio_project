@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.frameworkArray > img {
+  border-radius: 55%;
+}
+
 /* each project card */
 .home > h3 {
   margin: 25px;

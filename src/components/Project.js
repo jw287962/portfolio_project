@@ -9,6 +9,8 @@ const Project = ({
   text,
   framework,
   frameworkArray,
+  backendLink,
+  backendImage,
 }) => {
   return (
     <h3 className="hidden">
@@ -59,6 +61,19 @@ const Project = ({
               <img height="38" width="38" src={github} alt="Github link"></img>
             </a>
           </div>
+          {backendLink && (
+            <div>
+              Express:
+              <a href={`${backendLink}`}>
+                <img
+                  height="38"
+                  width="38"
+                  src={github}
+                  alt="Github link"
+                ></img>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </h3>
