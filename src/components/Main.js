@@ -103,7 +103,7 @@ const Main = ({ ignore }) => {
         <Project
           projectImage={smoothDining}
           text={"SmoothDining"}
-          liveWebsite={"https://jw287962.github.io/smoothDiningAngular"}
+          liveWebsite={"https://smoothdining.netlify.app/#/home"}
           gitLink={"https://github.com/jw287962/smoothDiningAngular"}
           backendLink={"https://github.com/jw287962/smoothdining_API"}
           backendImage={express}
