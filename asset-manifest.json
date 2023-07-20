@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.db34dc67.css",
-    "main.js": "./static/js/main.da9a8509.js",
+    "main.js": "./static/js/main.9b7cca08.js",
     "static/js/787.071eb048.chunk.js": "./static/js/787.071eb048.chunk.js",
     "static/media/waldo.png": "./static/media/waldo.0e1b2a5dfebd7aeb1d5d.png",
     "static/media/jason.png": "./static/media/jason.439676daa07159f075f5.png",
@@ -14,7 +14,7 @@
     "static/media/weather.png": "./static/media/weather.9d3332df7cac35cacd00.png",
     "static/media/medal logo.png": "./static/media/medal logo.4ff63b5de5282c8289bb.png",
     "static/media/html.webp": "./static/media/html.9ba5683e5bf3666e5666.webp",
-    "static/media/SmoothDining.png": "./static/media/SmoothDining.09ef84984fe559d92c9d.png",
+    "static/media/SmoothDining.png": "./static/media/SmoothDining.8ee00b006580f55edd3a.png",
     "static/media/rest.png": "./static/media/rest.db89f876055e2ee62a5e.png",
     "static/media/javascript.png": "./static/media/javascript.7f8751632b42a9932c15.png",
     "static/media/knight.png": "./static/media/knight.248e30a0f4642c802b6f.png",
@@ -25,11 +25,11 @@
     "static/media/typescript.svg": "./static/media/typescript.32fb130a1a03eac5cd3d509d5b96f188.svg",
     "index.html": "./index.html",
     "main.db34dc67.css.map": "./static/css/main.db34dc67.css.map",
-    "main.da9a8509.js.map": "./static/js/main.da9a8509.js.map",
+    "main.9b7cca08.js.map": "./static/js/main.9b7cca08.js.map",
     "787.071eb048.chunk.js.map": "./static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db34dc67.css",
-    "static/js/main.da9a8509.js"
+    "static/js/main.9b7cca08.js"
   ]
 }
