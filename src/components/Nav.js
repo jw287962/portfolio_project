@@ -1,15 +1,18 @@
 import "../css/nav.css";
 import { Link } from "react-router-dom";
 
-import { useEffect } from "react";
-
 // IMAGES FOR NAVLINK
 import github from "../img/Github.png";
 import linkedin from "../img/Linkedin.png";
 // MATERIAL ICON FOR NAVLINK
 import Icon from "@mdi/react";
 import { mdiFilePdfBox } from "@mdi/js";
+import { useState, useEffect, useRef } from "react";
+
 const Nav = () => {
+  let prevScrollPos = useRef(window.scrollY);
+  const [toggleNav, setToggleNav] = useState(false);
+
   const selected = (e) => {
     const eventTarget = e.target.htmlFor;
     if (eventTarget) {
@@ -18,9 +21,23 @@ const Nav = () => {
     }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (window.scrollY < prevScrollPos.current) {
+        setToggleNav(true);
+      } else {
+        setToggleNav(false);
+      }
+      prevScrollPos.current = window.scrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="mainNav">
+    <nav className={`mainNav ${toggleNav === true ? "visible" : ""} `}>
       <h1>Jason Wong</h1>
 
       <form

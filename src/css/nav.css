@@ -4,6 +4,14 @@
   justify-content: space-between;
   padding: 0px 10px;
   align-items: center;
+  position: relative;
+}
+
+.visible {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background-color: white;
 }
 
 .navList {
