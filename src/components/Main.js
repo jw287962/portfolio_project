@@ -4,7 +4,7 @@ import battleship from "../img/battleship.png";
 import twitter from "../img/twitterclone.png";
 import weather from "../img/weather.png";
 // import calculator from "../img/calculator.png";
-import smoothDining from "../img/skills/SmoothDining.png";
+import smoothDining from "../img/SmoothDining.png";
 import knights from "../img/knight.png";
 
 import waldo from "../img/waldo.png";
