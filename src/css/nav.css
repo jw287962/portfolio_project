@@ -4,28 +4,47 @@
   justify-content: space-between;
   padding: 0px 10px;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 65px;
 }
 
-.visible {
-  position: fixed;
+.visible,
+.notvisible {
   z-index: 99;
   width: 100%;
   background-color: white;
+}
+.visible {
+  position: fixed;
   animation: navbarPop 0.2s ease-in-out;
 }
-
+.notvisible {
+  transform: translateY(-70px);
+  /* margin-top: -70px; */
+  animation: navbarPopRev 0.2s ease-in-out;
+}
 @keyframes navbarPop {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-70px);
+    /* margin-top: -70px; */
   }
   100% {
     transform: translateY(0px);
+    /* margin-top: 0px; */
   }
 }
 
+@keyframes navbarPopRev {
+  0% {
+    transform: translateY(0px);
+    /* margin-top: 0px; */
+  }
+  100% {
+    /* margin-top: -70px; */
+    transform: translateY(-70px);
+  }
+}
 .navList {
   display: flex;
   align-items: center;

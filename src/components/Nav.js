@@ -37,7 +37,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={`mainNav ${toggleNav === true ? "visible" : ""} `}>
+    <nav className={`mainNav ${toggleNav === true ? "visible" : "notvisible"} `}>
       <h1>Jason Wong</h1>
 
       <form
