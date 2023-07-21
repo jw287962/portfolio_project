@@ -4,7 +4,9 @@
   justify-content: space-between;
   padding: 0px 10px;
   align-items: center;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 65px;
 }
 
 .visible {
@@ -12,6 +14,16 @@
   z-index: 99;
   width: 100%;
   background-color: white;
+  animation: navbarPop 0.2s ease-in-out;
+}
+
+@keyframes navbarPop {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .navList {
