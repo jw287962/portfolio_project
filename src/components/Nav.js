@@ -11,7 +11,7 @@ import { useState, useEffect, useRef } from "react";
 
 const Nav = () => {
   let prevScrollPos = useRef(window.scrollY);
-  const [toggleNav, setToggleNav] = useState(false);
+  const [toggleNav, setToggleNav] = useState(true);
 
   const selected = (e) => {
     const eventTarget = e.target.htmlFor;
@@ -37,7 +37,9 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={`mainNav ${toggleNav === true ? "visible" : "notvisible"} `}>
+    <nav
+      className={`mainNav ${toggleNav === true ? "visible" : "notvisible"} `}
+    >
       <h1>Jason Wong</h1>
 
       <form
