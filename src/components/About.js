@@ -73,15 +73,16 @@ const About = () => {
         <h4>Nov 2022 - The Odin Project</h4>
         <p>
           As a result, in November 2022, I wholeheartedly immersed myself in The
-          Odin Project. The experience has been incredible. I have relished the
-          opportunity to learn and create various projects, and I am eager to
-          delve into a professional setting where I can apply and develop my
-          skills further alongside talented professionals. You can explore my
-          projects on this website, with more available on my GitHub profile.
-          Despite working 60+ hours a week, I remained committed and dedicated
-          to learning by completing these projects, showcasing my unwavering
-          passion for software development. I eagerly anticipate leveraging and
-          furthering my skills as a software developer.
+          Odin Project while maintaing 60+ hours a week at Juicy Seafood.
+          Throughout this process, I have relished the opportunity to learn and
+          create various projects. And, I am eager to delve into a professional
+          setting where I can apply and develop my skills further alongside
+          talented professionals. You can explore my projects on this website,
+          with more available on my GitHub profile. Despite working 60+ hours a
+          week, I remained committed and dedicated to learning by completing
+          these projects, showcasing my unwavering passion for software
+          development. I eagerly anticipate leveraging and furthering my skills
+          as a software developer.
         </p>
       </div>
 
