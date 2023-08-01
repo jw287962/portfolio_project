@@ -41,28 +41,32 @@ const About = () => {
           Although I graduated with a Bachelor's in Management Information
           Systems from the University of Georgia in 2020, I did not pursue a job
           in my field. I faced challenges with my confidence and often succumbed
-          to fear, which resulted in missed internship opportunities and a
-          tendency to avoid problems. I have since developed and refined
+          to fear, which resulted in missed opportunities and a tendency to
+          avoid problems since a young age. I have since developed and refined
           essential soft skills after becoming a franchisee owner from 2020 to
-          2021. I am {calculateAge()} years old and have discovered a new
-          passion in software development. You can view my projects
-          <a href="/portfolio_project/Home"> here</a>. You can read about my
-          journey below.
+          2021. I am {calculateAge()} years old, and I started seriously
+          self-studying software development since November 2022. This has led
+          me to discover a new passion in software development. You can view my
+          projects
+          <a href="/portfolio_project/Home"> here</a> and read about my journey
+          below.
         </p>
       </div>
       <div className="hidden">
-        <h4>Jan 2022 - Before The Odin Project</h4>
+        <h4>Jan 2022 - Before The Odin Project </h4>
         <p>
           After joining Juicy Seafood as a manager, I worked exhausting hours,
-          typically between 70 to 80 hours per week. Around August 2022, I
-          finally reduced my hours to around 60+ per week. With a bit more spare
-          time, I started playing Valorant, a team-based competitive shooter.
-          Consequently, I finished my Immortal 1 (Top 1%) Act Card after ~40
-          Wins and two months (1 Act) of gameplay. This achievement highlighted
-          qualities such as collaboration, competitiveness, self-motivation, and
-          an innate desire for growth. It also sparked a strong aspiration to
-          pursue a new career. One where I can actively pursue personal growth,
-          face and overcome challenges, and enjoy.
+          typically between 70 to 80 hours per week with a lack of employees due
+          to the ongoing pandemic. Around August 2022, I reduced my hours to
+          around 60+ per week. With a bit more spare time, I started playing
+          Valorant, a team-based competitive shooter. Consequently, I finished
+          my Immortal 1 (Top 1%) Act Card after ~40 Wins and two months (1 Act)
+          of gameplay. This achievement highlighted qualities such as
+          collaboration, competitiveness, self-motivation, and an innate desire
+          for growth. During my time in the restaurant industry, I learned to
+          overcome my fears that had continously taken control over my life.
+          With this out of the way, a desire for a new career had been lit
+          aflame. I decided to put my passion into software development.
         </p>
       </div>
       <div className="hidden">
@@ -72,12 +76,12 @@ const About = () => {
           Odin Project. The experience has been incredible. I have relished the
           opportunity to learn and create various projects, and I am eager to
           delve into a professional setting where I can apply and develop my
-          skills further. You can explore my projects on this website, with more
-          available on my GitHub profile. Despite working 60+ hours a week, I
-          remained committed and dedicated to learning by completing these
-          projects, showcasing my unwavering passion for software development. I
-          eagerly anticipate leveraging and furthering my skills as a software
-          developer.
+          skills further alongside talented professionals. You can explore my
+          projects on this website, with more available on my GitHub profile.
+          Despite working 60+ hours a week, I remained committed and dedicated
+          to learning by completing these projects, showcasing my unwavering
+          passion for software development. I eagerly anticipate leveraging and
+          furthering my skills as a software developer.
         </p>
       </div>
 
