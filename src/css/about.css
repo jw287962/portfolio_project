@@ -1,6 +1,8 @@
 /* ::root {
 } */
-
+.about > div > p {
+  white-space: pre-wrap;
+}
 .about {
   display: flex;
   flex-direction: column;
