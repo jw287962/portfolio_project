@@ -19,6 +19,7 @@ const Nav = () => {
     const eventTarget = e.target.htmlFor;
     if (eventTarget) {
       const radio = document.getElementById(eventTarget);
+      // css turns checked to blue color and bigger
       radio.checked = true;
     }
     setTimeout(() => {
@@ -27,6 +28,14 @@ const Nav = () => {
   };
 
   useEffect(() => {
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((ele) => {
+      const curr = window.location.href;
+      if (curr.includes(ele.id)) {
+        ele.checked = true;
+      }
+    });
+
     setSnapshotAnimate(false);
     const handleScroll = (event) => {
       if (window.scrollY < prevScrollPos.current) {
@@ -44,6 +53,7 @@ const Nav = () => {
 
   return (
     <>
+      {/* camera looking snapshot */}
       <div className={`${!snapshotAnimate ? "animation" : ""} top-layer`}></div>
 
       <nav
@@ -59,13 +69,23 @@ const Nav = () => {
           <div className="navList">
             <button onClick={selected}>
               <Link to={{ pathname: "/home" }}>
-                <input type="radio" id="home" name="home"></input>
+                <input
+                  type="radio"
+                  id="home"
+                  name="home"
+                  className="nav-link"
+                ></input>
                 <label htmlFor="home">Home</label>
               </Link>
             </button>
             <button onClick={selected}>
               <Link to={{ pathname: "/about" }}>
-                <input type="radio" id="about" name="home"></input>
+                <input
+                  type="radio"
+                  id="about"
+                  name="home"
+                  className="nav-link"
+                ></input>
                 <label htmlFor="about">About</label>
               </Link>
             </button>
