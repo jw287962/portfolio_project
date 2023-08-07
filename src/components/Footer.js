@@ -1,6 +1,6 @@
 import "../css/about.css";
 import Nav from "./Nav";
-const About = () => {
+const Footer = () => {
   return (
     <footer>
       <Nav></Nav>
@@ -8,4 +8,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Footer;

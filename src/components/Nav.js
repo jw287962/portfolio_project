@@ -38,7 +38,10 @@ const Nav = () => {
 
     setSnapshotAnimate(false);
     const handleScroll = (event) => {
-      if (window.scrollY < prevScrollPos.current) {
+      if (
+        window.scrollY < prevScrollPos.current ||
+        window.innerHeight + window.scrollY >= document.body.offsetHeight
+      ) {
         setToggleNav(true);
       } else {
         setToggleNav(false);
@@ -111,35 +114,6 @@ const Nav = () => {
             </a>
           </div>
         </form>
-        {/* <ul className="navList">
-          <li>
-            <Link to={{ pathname: "/Home" }}>Home </Link>
-          </li>
-          <li>
-            <Link to={{ pathname: "/about" }}>About </Link>
-          </li>
-          <li className="image">
-            <a className="imgLink" href="https://github.com/jw287962">
-              <img height="40" width="40" src={github}></img>
-            </a>
-          </li>
-          <li className="image">
-            <a
-              className="imgLink"
-              href="https://www.linkedin.com/in/jason-wong-a796a2175/"
-            >
-              <img height="40" width="40" src={linkedin}></img>
-            </a>
-          </li>
-          <li className="image">
-            <a
-              className="imgLink"
-              href="https://drive.google.com/file/d/1bjNT04nRN40tVUWpYk3QJbxz_6KiNF4J/view?usp=share_link"
-            >
-              <Icon path={mdiFilePdfBox} size={2} alt="Jason's Resume" />
-            </a>
-          </li>
-        </ul> */}
       </nav>
     </>
   );
