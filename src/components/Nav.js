@@ -29,9 +29,9 @@ const Nav = () => {
 
   useEffect(() => {
     const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach((ele) => {
+    navLinks.forEach((ele, i) => {
       const curr = window.location.href;
-      if (curr.includes(ele.id)) {
+      if (curr.includes(ele.id) || i === 0) {
         ele.checked = true;
       }
     });
