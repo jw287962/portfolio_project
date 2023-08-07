@@ -77,7 +77,7 @@ const About = () => {
         </div>
 
         <Group
-          header={"Auto Bot for Discord Game <p>(2020-2021)</p>"}
+          header={"Auto Farm Bot for Discord Game <p>(2020-2021)</p>"}
           body={
             `Developed a program that worked seamlessly with a Discord bot, achieving 99% fully autonomous gameplay. ` +
             `Optimized collection of in-game items and currency by over 100% utilizing image-matching techniques for precise decision-making ` +
