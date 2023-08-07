@@ -85,6 +85,7 @@ const About = () => {
           }
           setHeaderText={setHeaderText}
           setTextData={setTextData}
+          setDefault={true}
         ></Group>
         <Group setHeaderText={setHeaderText} setTextData={setTextData}></Group>
         <Group

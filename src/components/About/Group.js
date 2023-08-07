@@ -3,7 +3,7 @@ import "../../css/group.css";
 import { useEffect, useState } from "react";
 
 // use left = true || right is true to set into left or right??
-const Group = ({ header, body, setHeaderText, setTextData }) => {
+const Group = ({ header, body, setHeaderText, setTextData, setDefault }) => {
   // const [showText, setShowText] = useState(false);
   const onTextHover = () => {
     // setShowText(true);
@@ -16,21 +16,14 @@ const Group = ({ header, body, setHeaderText, setTextData }) => {
     const [initialLoad] = useState(true);
 
     useEffect(() => {
-      setHeaderText(header);
-      setTextData(body);
+      if (setDefault) {
+        setHeaderText(header);
+        setTextData(body);
+      }
     }, [initialLoad]);
   };
 
   useInitialLoad();
-
-  // const onTextLeave = () => {
-  //   setShowText(false);
-  // };
-
-  // useEffect(() => {
-  //   // setHeaderText(header);
-  //   // setTextData(body);
-  // }, []);
 
   return (
     <>
@@ -43,10 +36,7 @@ const Group = ({ header, body, setHeaderText, setTextData }) => {
             onMouseLeave={() => {}}
             dangerouslySetInnerHTML={{ __html: header }}
           ></h4>
-          <div className="time-visual"></div>
-          {header && <span className="time-mark"> </span>}
-
-          <div className="empty-header"></div>
+          {/* <div className="time-visual"></div> */}
         </button>
       </div>
     </>
