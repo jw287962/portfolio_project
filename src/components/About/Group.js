@@ -1,6 +1,6 @@
 //
 import "../../css/group.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // use left = true || right is true to set into left or right??
 const Group = ({ header, body, setHeaderText, setTextData }) => {
@@ -12,13 +12,25 @@ const Group = ({ header, body, setHeaderText, setTextData }) => {
       setTextData(body);
     }
   };
+  const useInitialLoad = () => {
+    const [initialLoad] = useState(true);
+
+    useEffect(() => {
+      setHeaderText(header);
+      setTextData(body);
+    }, [initialLoad]);
+  };
+
+  useInitialLoad();
+
   // const onTextLeave = () => {
   //   setShowText(false);
   // };
-  useEffect(() => {
-    setHeaderText(header);
-    setTextData(body);
-  }, []);
+
+  // useEffect(() => {
+  //   // setHeaderText(header);
+  //   // setTextData(body);
+  // }, []);
 
   return (
     <>
