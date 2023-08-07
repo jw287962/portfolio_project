@@ -15,6 +15,7 @@ import Skills from "../components/Skills";
 const About = () => {
   const [textData, setTextData] = useState("");
   const [headerText, setHeaderText] = useState("");
+  const [updated, setUpdated] = useState(false);
   useEffect(() => {
     // let options = {};
     const observer = new IntersectionObserver((entries, options) => {
@@ -30,6 +31,12 @@ const About = () => {
     hiddenElements.forEach((el) => observer.observe(el));
   });
 
+  useEffect(() => {
+    setUpdated(true);
+    setTimeout(() => {
+      setUpdated(false);
+    }, 50);
+  }, [headerText, textData]);
   useEffect(() => {
     const distanceRatio = [1.27, 0, 3.7, 0];
 
@@ -61,7 +68,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className={"description"}>
+        <div className={updated ? "toggle" : "description"}>
           <h4 dangerouslySetInnerHTML={{ __html: headerText }}></h4>
           <p
             className="text"

@@ -1,11 +1,12 @@
 /*  GROUP FOR EACH ACHIEVEMENT INTERACTIVE ELEMENT */
-.group {
+/* .group {
   width: 100vw;
-}
+} */
 .achievement-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .description {
   white-space: pre-wrap;
@@ -18,58 +19,95 @@
   text-align: left;
 }
 
-.description > * {
+/* .description > * {
   animation-duration: 0.3s;
+} */
+.toggle {
+  opacity: 0%;
+  display: none;
 }
-
 .achievements > .description {
   background-color: white;
+  margin-top: 5px;
   padding: 5px;
   /* border: 1px solid black; */
   position: absolute;
-  max-width: unset;
-  min-width: unset;
+  max-width: 450px;
   left: 55%;
   top: 50px;
+  animation: textappear 0.5s cubic-bezier(0.78, -0.43, 0.18, 1) 0s 1;
 }
 
-/* Left side achievement bar */
-.header > span > p,
+.header > p,
 .description > h4 > p {
+  font-size: 15px;
   font-weight: 100;
   margin: 0px;
   padding: 0px;
+  color: rgb(97, 97, 97);
 }
 
 .hidetext {
   display: none;
 }
-.header {
-  position: relative;
-  margin: 5px;
-  margin-right: 25px;
-  text-align: right;
-  min-height: 50%;
-}
-
-.achievements > .group {
-  position: absolute;
+.group {
+  right: 50%;
 }
 .header-button {
   font-size: 17px;
   margin: 0px;
 
   background-color: unset;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  top: 100px;
-  width: 100%;
-  word-wrap: normal;
-  flex-wrap: wrap;
+
+  position: relative;
+  margin-right: 25px;
+  text-align: right;
 }
 
-/* .header-button :nth-child(n) {
+.achievements > .group {
+  position: absolute;
 }
-.header-button :nth-child(n + 2) {
-  justify-content: flex-end;
-} */
+
+@media (max-width: 750px) {
+  .achievements > .description {
+    left: 39%;
+  }
+  .achievement-bar {
+    align-items: start;
+  }
+  .header,
+  .header > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+  }
+  .header-button {
+    min-width: 100px;
+    text-align: start;
+    width: auto;
+  }
+  .group {
+    right: 65%;
+  }
+
+  .date {
+    transform: translateX(-50%);
+  }
+
+  .description > .text {
+    overflow-y: scroll;
+    max-height: 400px;
+
+    scrollbar-track-color: grey;
+    scrollbar-arrow-color: white;
+    scrollbar-width: thin;
+  }
+  .text:hover {
+    scrollbar-width: auto;
+    scrollbar-width: 100px;
+  }
+  .text::-webkit-scrollbar-track-piece {
+    width: 10px;
+  }
+}

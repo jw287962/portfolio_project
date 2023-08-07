@@ -1,6 +1,6 @@
 //
 import "../../css/group.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // use left = true || right is true to set into left or right??
 const Group = ({ header, body, setHeaderText, setTextData }) => {
@@ -18,7 +18,6 @@ const Group = ({ header, body, setHeaderText, setTextData }) => {
   useEffect(() => {
     setHeaderText(header);
     setTextData(body);
-    //
   }, []);
 
   return (
@@ -30,14 +29,12 @@ const Group = ({ header, body, setHeaderText, setTextData }) => {
             // onClick={onTextHover}
             onMouseEnter={onTextHover}
             onMouseLeave={() => {}}
-          >
-            <span dangerouslySetInnerHTML={{ __html: header }}></span>
-            {/* {header} &nbsp; */}
-            <div className="time-visual"></div>
-            {header && <span className="time-mark"> </span>}
-          </h4>
+            dangerouslySetInnerHTML={{ __html: header }}
+          ></h4>
+          <div className="time-visual"></div>
+          {header && <span className="time-mark"> </span>}
 
-          <h4 className="empty-header"></h4>
+          <div className="empty-header"></div>
         </button>
       </div>
     </>
