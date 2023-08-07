@@ -1,0 +1,75 @@
+/*  GROUP FOR EACH ACHIEVEMENT INTERACTIVE ELEMENT */
+.group {
+  width: 100vw;
+}
+.achievement-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description {
+  white-space: pre-wrap;
+  text-indent: 20px;
+
+  padding: 0px 40px;
+  box-sizing: border-box;
+  font-size: 19px;
+  max-width: 700px;
+  text-align: left;
+}
+
+.description > * {
+  animation-duration: 0.3s;
+}
+
+.achievements > .description {
+  background-color: white;
+  padding: 5px;
+  /* border: 1px solid black; */
+  position: absolute;
+  max-width: unset;
+  min-width: unset;
+  left: 55%;
+  top: 50px;
+}
+
+/* Left side achievement bar */
+.header > span > p,
+.description > h4 > p {
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidetext {
+  display: none;
+}
+.header {
+  position: relative;
+  margin: 5px;
+  margin-right: 25px;
+  text-align: right;
+  min-height: 50%;
+}
+
+.achievements > .group {
+  position: absolute;
+}
+.header-button {
+  font-size: 17px;
+  margin: 0px;
+
+  background-color: unset;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  top: 100px;
+  width: 100%;
+  word-wrap: normal;
+  flex-wrap: wrap;
+}
+
+/* .header-button :nth-child(n) {
+}
+.header-button :nth-child(n + 2) {
+  justify-content: flex-end;
+} */

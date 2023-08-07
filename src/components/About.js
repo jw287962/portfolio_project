@@ -1,10 +1,11 @@
 import "../css/about.css";
 
-// import { Link } from "react-router-dom";
-import { useEffect } from "react";
+// import { Link } from "react-router-dom";\
+import { useEffect, useState } from "react";
 import ContactMe from "./ContactMe";
 // Components
 import Hobbies from "./Hobbies";
+import Group from "./About/Group";
 
 // Images & Material Icons
 
@@ -12,6 +13,8 @@ import jason from "../img/jason.png";
 import Skills from "../components/Skills";
 
 const About = () => {
+  const [textData, setTextData] = useState("");
+  const [headerText, setHeaderText] = useState("");
   useEffect(() => {
     // let options = {};
     const observer = new IntersectionObserver((entries, options) => {
@@ -19,15 +22,27 @@ const About = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
-          entry.target.classList.remove("show");
+          // entry.target.classList.remove("show");
         }
       });
     });
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
   });
+
+  useEffect(() => {
+    const distanceRatio = [1.27, 0, 3.7, 0];
+
+    const group = document.querySelectorAll(".group");
+    group.forEach((ele, i) => {
+      ele.style.top = `${distanceRatio[i] * 100}px`;
+    });
+    const dates = document.querySelectorAll(".date");
+    dates.forEach((ele, i) => {
+      ele.style.top = `${(i + 1) * 100}px`;
+    });
+  }, []);
   function calculateAge() {
-    console.log((new Date(1997, 11) - new Date()) / 1000 / 60 / 60 / 365 / 24);
     return Math.floor(
       (new Date() - new Date(1997, 11)) / 1000 / 60 / 60 / 365 / 24
     );
@@ -35,34 +50,54 @@ const About = () => {
   return (
     <main className="about">
       <img src={jason} height="250px" alt=""></img>
+      <div className="hidden achievements">
+        <div className="achievement-bar">
+          <h1> Achievements </h1>
+          <div className="line"></div>
+          {Array.from({ length: 4 }).map((ele, i) => (
+            <p className="date" key={`date${i}`}>
+              {`${2020 + i}`}{" "}
+            </p>
+          ))}
+        </div>
+
+        <div className={"description"}>
+          <h4 dangerouslySetInnerHTML={{ __html: headerText }}></h4>
+          <p
+            className="text"
+            dangerouslySetInnerHTML={{ __html: textData }}
+          ></p>
+        </div>
+
+        <Group
+          header={"Auto Bot for Discord Game <p>(2020-2021)</p>"}
+          body={
+            `Developed a program that worked seamlessly with a Discord bot, achieving 99% fully autonomous gameplay. ` +
+            `Optimized collection of in-game items and currency by over 100% utilizing image-matching techniques for precise decision-making ` +
+            ` at any point. Generated approximately <strong>$25,000</strong> in 2020, incurring only web hosting expenses and requiring minimal supervision.`
+          }
+          setHeaderText={setHeaderText}
+          setTextData={setTextData}
+        ></Group>
+        <Group setHeaderText={setHeaderText} setTextData={setTextData}></Group>
+        <Group
+          header={"Projects | Self-Taught <p>(Nov 2022 - Current)</p>"}
+          body={
+            `As a self-taught developer since November 2022, I embarked on solo projects while working overtime at Juicy Seafood. ` +
+            `My full-stack applications incorporated essential authentication features like JWT Tokens, OAuth, and custom ` +
+            `registration/login while adhering to CORs policy. I tackled applied problem-solving projects such as Knight ` +
+            `Travails, demonstrating proficiency in data structures and algorithms. My dedication to continuous learning drives ` +
+            `me to explore online resources and engage in hands-on work to enhance my skills further.`
+          }
+          setHeaderText={setHeaderText}
+          setTextData={setTextData}
+        ></Group>
+      </div>
+      {/* ABOUT */}
       <div className="hidden">
-        <h1>- Achievements - </h1>
-        <h4>Coin Mart for Discord Game | 2020-2021</h4>
-        <p>
-          {"\t"}Developed a successful scripting program that seamlessly worked
-          alongside a Discord bot, automating gameplay and generating in-game
-          currency for a Discord game. Employed image matching techniques to
-          ensure precise decision-making during gameplay. Achieved an
-          approximate revenue of <strong>$25,000</strong> in 2020 with minimal
-          overhead costs, despite the challenges posed by COVID-19.
-        </p>
-        <h4>Solo Projects | Self-Taught since Nov 2022</h4>
-        <p>
-          {"\t"}As a self-taught developer since November 2022, I embarked on
-          solo projects while working overtime at Juicy Seafood. My full-stack
-          applications incorporated essential authentication features like JWT
-          Tokens, OAuth, and custom registration/login while adhering to CORs
-          policy. I tackled applied problem-solving projects such as Knight
-          Travails, demonstrating proficiency in data structures and algorithms.
-          My dedication to continuous learning drives me to explore online
-          resources and engage in hands-on work to enhance my skills further.
-        </p>
-        <ul>
-          <li></li>
-        </ul>
-        <h1> - About Jason -</h1>
-        <h4> After Graduation | </h4>
-        <p>
+        <h1> About Jason </h1>
+        <h4> After Graduation </h4>
+        <p className="description">
           {"\t"}Although I graduated with a Bachelor's in Management Information
           Systems from the University of Georgia in 2020, I did not pursue a job
           in my field. I faced challenges with my confidence and often succumbed
@@ -76,10 +111,8 @@ const About = () => {
           <a href="/portfolio_project/Home">here</a> and read about my journey
           below.
         </p>
-      </div>
-      <div className="hidden">
         <h4>Jan 2022 - Before The Odin Project </h4>
-        <p>
+        <p className="description">
           {"\t"}After joining Juicy Seafood as a manager, I worked exhausting
           hours, typically between 70 to 80 hours per week with a lack of
           employees due to the ongoing pandemic. Around August 2022, I reduced
@@ -96,7 +129,7 @@ const About = () => {
       </div>
       <div className="hidden">
         <h4>Nov 2022 - The Odin Project</h4>
-        <p>
+        <p className="description">
           {"\t"}As a result, in November 2022, I wholeheartedly immersed myself
           in The Odin Project while maintaing 60+ hours a week at Juicy Seafood.
           Throughout this process, I have relished the opportunity to learn and

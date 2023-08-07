@@ -1,26 +1,13 @@
 /* ::root {
 } */
-.about > div > p {
-  white-space: pre-wrap;
-}
+
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
-}
-
-.about > div > p {
-  padding: 0px 40px;
-  box-sizing: border-box;
-  font-size: 19px;
-  max-width: 700px;
-}
-
-.about > .skillContainer,
-.about > div > h1,
-.about > div > h4 {
+  position: relative;
   text-align: center;
 }
 
@@ -35,6 +22,35 @@
   filter: blur(0px);
   opacity: 1;
 }
+
+/* achievement section */
+.date {
+  position: absolute;
+  font-weight: 600;
+  cursor: default;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px;
+  /* translate: -50%; */
+  border-radius: 5px;
+  z-index: 99;
+}
+.achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 50px 0px;
+}
+.line {
+  position: relative;
+  height: 450px;
+  width: 0px;
+
+  border: 1px solid black;
+  color: black;
+}
+/*  */
 .skillContainer {
   width: 100%;
   border-top: 1px solid black;
@@ -52,6 +68,7 @@
   gap: 19px;
   font-size: 19px;
 }
+
 #expressSkill {
   border-radius: 50%;
 }
